@@ -1353,7 +1353,7 @@ export function App() {
                     dir="rtl"
                     className="font-maghribi text-lg sm:text-xl text-[#F3E5AB] mb-2 leading-relaxed"
                   >
-                    إِحْسَان فَتْحِي — «إِحْسَانُ صَنْعَتِهَا يُشِعُّ نَضَارَةً ❖ كَالبَدْرِ يَنْسِجُ فِي الظَّلَامِ دَرَارِيَا»
+                    « إِحْسَانُ صَنْعَتِهَا يُشِعُّ نَضَارَةً ❖ كَالبَدْرِ يَنْسِجُ فِي الظَّلَامِ دَرَارِيَا »
                   </div>
                   <p className="text-xs sm:text-sm opacity-75 max-w-xl leading-relaxed">
                     {lang === 'ar'
@@ -1400,7 +1400,11 @@ export function App() {
                 Pearlie Handcrafted 🔮 × Little Calm Corner ☁️
               </div>
               <div>
-                © 2026 Pearlie Handcrafted & Little Calm Corner · Private Commercial Property of Ihsane Fathi (@ihsane__ft) · All Rights Reserved · Delivery all over Morocco 🚚🇲🇦
+                {lang === 'ar'
+                  ? '© 2026 جميع الحقوق التجارية محفوظة لدار بِيرْلي وإحسان (@ihsane__ft) · التوصيل لجميع مدن المغرب 🚚🇲🇦'
+                  : lang === 'fr'
+                  ? '© 2026 Pearlie Handcrafted & Little Calm Corner · Propriété commerciale privée d’Ihsane (@ihsane__ft) · Tous droits réservés · Livraison partout au Maroc 🚚🇲🇦'
+                  : '© 2026 Pearlie Handcrafted & Little Calm Corner · Private Commercial Property of Ihsane (@ihsane__ft) · All Rights Reserved · Delivery all over Morocco 🚚🇲🇦'}
               </div>
             </div>
           </div>

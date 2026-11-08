@@ -98,7 +98,7 @@ export const FounderSurpriseModal: React.FC<FounderSurpriseModalProps> = ({ isOp
             {lang === 'ar' ? (
               <>
                 <p className="font-maghribi text-2xl text-[#F9D5E5]">
-                  إِلَى إِحْسَان فَتْحِي المُبْدِعَةِ (@ihsane__ft) 🤍🔮
+                  إِلَى إِحْسَان المُبْدِعَةِ (@ihsane__ft) 🤍🔮
                 </p>
                 <p>
                   هذا الموقع صُمّم خصيصاً كمفاجأة لكِ احتفاءً بإبداعكِ وشغفكِ! بين سنتكِ الأخيرة في الدراسة الهندسية، وبين أناملكِ التي تنسج مئات اللآلئ والكريستالات في{' '}

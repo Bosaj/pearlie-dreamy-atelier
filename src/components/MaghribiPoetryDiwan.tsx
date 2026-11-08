@@ -35,10 +35,10 @@ const QASIDAS: QasidaItem[] = [
     titleAr: 'دُرُّ الصِّنَاعَةِ وَإِحْسَانُ اليَدِ',
     titleEn: 'The Pearl of Craft & The Grace of Ihsane’s Hand',
     titleFr: 'La Perle de l’Art & La Grâce de la Main d’Ihsane',
-    bahrAr: 'البَحْرُ الكَامِلُ · إِهْدَاءٌ خَاصٌّ لِإِحْسَان فَتْحِي (@ihsane__ft)',
+    bahrAr: 'البَحْرُ الكَامِلُ · إِهْدَاءٌ خَاصٌّ لِإِحْسَان (@ihsane__ft)',
     dedicationAr: 'فِي وَصْفِ أَنَامِلِ «إِحْسَان» وَهِيَ تَنْسِجُ حَقَائِبَ اللُّؤْلُؤِ وَالبَلَّوْرِ بِصَبْرٍ وَإِتْقَانٍ',
-    dedicationEn: 'Dedicated to founder & artisan Ihsane Fathi — weaving luminous pearls & crystals by hand.',
-    dedicationFr: 'Dédié à la fondatrice et artisane Ihsane Fathi — tissant perles et cristaux à la main.',
+    dedicationEn: 'Dedicated to founder & artisan Ihsane (@ihsane__ft) — weaving luminous pearls & crystals by hand.',
+    dedicationFr: 'Dédié à la fondatrice et artisane Ihsane (@ihsane__ft) — tissant perles et cristaux à la main.',
     accent: '#D8B4E2',
     abyat: [
       {
@@ -446,10 +446,10 @@ export const MaghribiPoetryDiwan: React.FC<MaghribiPoetryDiwanProps> = ({ lang, 
               </div>
               <div>
                 <div className="font-maghribi text-lg sm:text-xl text-[#F3E5AB] leading-snug">
-                  خُطَّ بِقَلَمِ المَوَدَّةِ لِإِحْسَان فَتْحِي — بِيرْلي وَرُكْنُ الهُدُوءِ
+                  دِيوَانُ الدُّرِّ وَاللُّؤْلُؤِ — الخَطُّ المَغْرِبِيُّ الأَصِيلُ
                 </div>
                 <div className="text-[11px] opacity-65">
-                   الخط المغربي الأصيل (Bouazzi Maghribi) · جميع الحقوق التجارية محفوظة لبيرلي وإحسان فتحي © 🇲🇦
+                  © 2026 Pearlie Handcrafted 🔮 × Little Calm Corner ☁️ · All Rights Reserved 🇲🇦
                 </div>
               </div>
             </div>
