@@ -282,7 +282,7 @@ export function App() {
           {/* Desktop Navigation Links */}
           <div className="hidden lg:flex items-center gap-5 text-xs font-medium tracking-wide">
             <a href="#boutique" className="opacity-75 hover:opacity-100 transition-opacity">
-              {lang === 'ar' ? 'المتجر' : lang === 'fr' ? 'Boutique' : 'Boutique'}
+              {lang === 'ar' ? 'المتجر' : lang === 'fr' ? 'Boutique' : lang === 'es' ? 'Tienda' : 'Boutique'}
             </a>
             <a
               href="#diwan"
@@ -291,7 +291,7 @@ export function App() {
               {lang === 'ar' ? 'ديوان الدُّرّ 📜' : 'Diwan المغربي 📜'}
             </a>
             <a href="#bespoke" className="opacity-75 hover:opacity-100 transition-opacity">
-              {lang === 'ar' ? 'تصميم خاص' : lang === 'fr' ? 'Sur-Mesure' : 'Bespoke Studio'}
+              {lang === 'ar' ? 'تصميم خاص' : lang === 'fr' ? 'Sur-Mesure' : lang === 'es' ? 'Estudio a Medida' : 'Bespoke Studio'}
             </a>
             <a href="#lookbook" className="opacity-75 hover:opacity-100 transition-opacity">
               {lang === 'ar' ? 'الأرشيف (24)' : 'Lookbook (24)'}
@@ -315,7 +315,7 @@ export function App() {
             >
               <Crown className="w-3.5 h-3.5 text-[#F3E5AB] shrink-0" />
               <span className="hidden sm:inline">
-                {lang === 'ar' ? 'مفاجأة لإحسان ✨' : lang === 'fr' ? 'Pour Ihsane ✨' : 'For Ihsane ✨'}
+                {lang === 'ar' ? 'مفاجأة لإحسان ✨' : lang === 'fr' ? 'Pour Ihsane ✨' : lang === 'es' ? 'Para Ihsane ✨' : 'For Ihsane ✨'}
               </span>
             </button>
 
@@ -325,7 +325,7 @@ export function App() {
                 lightMode ? 'bg-stone-200/70' : 'bg-white/[0.06]'
               }`}
             >
-              {(['en', 'fr', 'ar'] as Language[]).map((l) => (
+              {(['en', 'fr', 'es', 'ar'] as Language[]).map((l) => (
                 <button
                   key={l}
                   type="button"
@@ -502,6 +502,14 @@ export function App() {
                     </span>{' '}
                     du futur.
                   </>
+                ) : lang === 'es' ? (
+                  <>
+                    Elegancia, singularidad y{' '}
+                    <span className={lightMode ? 'italic font-normal text-nacre-daylight' : 'italic font-normal text-nacre-gradient'}>
+                      encanto luminoso
+                    </span>{' '}
+                    tejido a mano.
+                  </>
                 ) : (
                   <>
                     Elegance, individuality &{' '}
@@ -550,7 +558,7 @@ export function App() {
                   ? '« نوع من الجمال الهادئ الذي لا يحتاج إلى ضجيج ليُلفت الأنظار. تذكير لطيف بأنكِ مرئية، متفردة، جميلة وكافية. » — حقائب وميداليات من اللؤلؤ والكريستال من إبداع إحسان (@_pearlie.dreamy). التوصيل متوفر لجميع أنحاء المغرب 🚚🇲🇦'
                   : lang === 'fr'
                   ? '« Une beauté qui n’a pas besoin de faire du bruit pour être remarquée. Un doux rappel que vous êtes vue, unique, belle et suffisante. » — Sacs de soirée en cristal & perles façonnés à la main par Ihsane (@_pearlie.dreamy). Livraison partout au Maroc 🚚🇲🇦.'
-                  : '“A kind of beauty that doesn’t need to be loud to be noticed. A soft reminder that you are seen, unique, beautiful & enough.” — Handcrafted crystal kiss-lock bags, mother-of-pearl totes & custom A–Z charms by Ihsane (@_pearlie.dreamy). Delivery all over Morocco 🚚🇲🇦.'}
+                  : lang === 'es' ? '« Un tipo de belleza que no necesita hacer ruido para ser notada. Un suave recordatorio de que eres vista, única, hermosa y suficiente. » — Bolsos de cristal con cierre kiss-lock, totes de nácar y charms A–Z personalizados hechos a mano por Ihsane (@_pearlie.dreamy). Envíos a todo Marruecos 🚚🇲🇦.' : '“A kind of beauty that doesn’t need to be loud to be noticed. A soft reminder that you are seen, unique, beautiful & enough.” — Handcrafted crystal kiss-lock bags, mother-of-pearl totes & custom A–Z charms by Ihsane (@_pearlie.dreamy). Delivery all over Morocco 🚚🇲🇦.'}
               </p>
 
               {/* Interactive 3D Pearl Light-Spectrum Switcher */}
@@ -560,7 +568,7 @@ export function App() {
                     ? 'إضاءة اللؤلؤ التفاعلية ثلاثية الأبعاد:'
                     : lang === 'fr'
                     ? 'Spectre Lumineux 3D Interactif :'
-                    : 'Interactive 3D Pearl Refraction Spectrum:'}
+                    : lang === 'es' ? 'Espectro de Luz 3D Interactivo:' : 'Interactive 3D Pearl Refraction Spectrum:'}
                 </div>
                 <div className="flex flex-wrap gap-1.5 sm:gap-2">
                   {(
@@ -624,7 +632,7 @@ export function App() {
                       ? 'اكتشفي المجموعة الكاملة'
                       : lang === 'fr'
                       ? 'Explorer la Collection'
-                      : 'Explore Couture Collection'}
+                      : lang === 'es' ? 'Explorar la Colección' : 'Explore Couture Collection'}
                   </span>
                   <span className="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-black/15 flex items-center justify-center transition-transform duration-200 ease-out-strong group-hover:translate-x-1 group-hover:-translate-y-[1px] shrink-0">
                     ↗
@@ -644,7 +652,7 @@ export function App() {
                       ? 'صمّمي قطعتكِ الخاصة (A–Z)'
                       : lang === 'fr'
                       ? 'Créer Sur-Mesure (A–Z)'
-                      : 'Custom Atelier Builder'}
+                      : lang === 'es' ? 'Crear a Medida (A–Z)' : 'Custom Atelier Builder'}
                   </span>
                   <span className="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-white/10 flex items-center justify-center transition-transform duration-200 ease-out-strong group-hover:translate-x-1 group-hover:-translate-y-[1px] shrink-0">
                     ✨
@@ -883,6 +891,10 @@ export function App() {
                   <>
                     Collections <span className="italic font-normal text-[#D8B4E2]">Cristal & Perles</span> Nacrees.
                   </>
+                ) : lang === 'es' ? (
+                  <>
+                    Creaciones <span className="italic font-normal text-[#D8B4E2]">de Perlas y Cristal</span> Exclusivas.
+                  </>
                 ) : (
                   <>
                     Signature <span className="italic font-normal text-[#D8B4E2]">Pearl & Crystal</span> Creations.
@@ -906,7 +918,7 @@ export function App() {
                     ? 'ابحثي عن حقيبة أو ميدالية...'
                     : lang === 'fr'
                     ? 'Rechercher un sac, porte-clés...'
-                    : 'Search bags, keychains, colors...'
+                    : lang === 'es' ? 'Buscar bolsos, llaveros, colores...' : 'Search bags, keychains, colors...'
                 }
                 className={`w-full rounded-full pl-10 pr-4 py-2.5 text-xs outline-none ${
                   lightMode
@@ -926,6 +938,7 @@ export function App() {
                   label: {
                     en: `All Creations (${PEARLIE_PRODUCTS.length})`,
                     fr: `Toutes les Créations (${PEARLIE_PRODUCTS.length})`,
+                    es: `Todas las Creaciones (${PEARLIE_PRODUCTS.length})`,
                     ar: `جميع الإبداعات (${PEARLIE_PRODUCTS.length})`,
                   },
                 },
@@ -934,6 +947,7 @@ export function App() {
                   label: {
                     en: 'Crystal Kiss-Lock Couture 💎',
                     fr: 'Sacs Cristal Kiss-Lock 💎',
+                    es: 'Bolsos de Cristal Kiss-Lock 💎',
                     ar: 'حقائب الكريستال الفاخرة 💎',
                   },
                 },
@@ -942,6 +956,7 @@ export function App() {
                   label: {
                     en: 'Celestine & Elarielle Pearl Bags 🦢',
                     fr: 'Sacs Perlés Célestine & Elarielle 🦢',
+                    es: 'Bolsos de Perlas Célestine y Elarielle 🦢',
                     ar: 'حقائب اللؤلؤ سيليستين وإلارييل 🦢',
                   },
                 },
@@ -950,6 +965,7 @@ export function App() {
                   label: {
                     en: 'Porte-Clés & Alphabet A–Z 🔑',
                     fr: 'Porte-Clés & Initiales A–Z 🔑',
+                    es: 'Llaveros e Iniciales A–Z 🔑',
                     ar: 'ميداليات وحروف اللؤلؤ 🔑',
                   },
                 },
@@ -958,6 +974,7 @@ export function App() {
                   label: {
                     en: 'Pearl AirPods & Mini Cases ✨',
                     fr: 'Étuis AirPods & Mini Pochettes ✨',
+                    es: 'Estuches AirPods y Mini Bolsitos ✨',
                     ar: 'حافظات السماعات والميني باوتش ✨',
                   },
                 },
@@ -1113,7 +1130,7 @@ export function App() {
                           ) : (
                             <>
                               <Plus className="w-3.5 h-3.5" />
-                              <span>{lang === 'ar' ? 'أضيفي للسلة' : lang === 'fr' ? 'Ajouter' : 'Add to Bag'}</span>
+                              <span>{lang === 'ar' ? 'أضيفي للسلة' : lang === 'fr' ? 'Ajouter' : lang === 'es' ? 'Añadir' : 'Add to Bag'}</span>
                             </>
                           )}
                         </button>
@@ -1171,6 +1188,11 @@ export function App() {
                       « Chez Pearlie Handmade, chaque pièce est imaginée et réalisée à la main avec{' '}
                       <span className="italic text-[#F9D5E5]">beaucoup de soin et d’amour</span>. »
                     </>
+                  ) : lang === 'es' ? (
+                    <>
+                      « En Pearlie Handmade, cada pieza está imaginada y hecha a mano con{' '}
+                      <span className="italic text-[#F9D5E5]">muchísimo cuidado y amor</span>. »
+                    </>
                   ) : (
                     <>
                       “Every piece is handcrafted with love, wrapped in{' '}
@@ -1183,7 +1205,7 @@ export function App() {
                     ? 'تصل طلبيتكِ في علبة هدايا أنيقة مربوطة بشريط ساتان بلون اللافندر، مع بطاقة شكر Pearlie الموقعة وملصقات العلامة، جاهزة للإهداء أو لتدليل نفسكِ.'
                     : lang === 'fr'
                     ? 'Chaque commande Pearlie est préparée comme un précieux cadeau : boîte kraft siglée, ruban de satin lavande noué à la main, carte de remerciement « Made with love & care » et livraison rapide partout au Maroc.'
-                    : 'Every Pearlie order arrives in our signature lavender-ribbon gift box with custom Pearlie thank-you cards (“Made with love & care”), round atelier seals, and nationwide delivery across Morocco.'}
+                    : lang === 'es' ? 'Cada pedido Pearlie se prepara como un regalo precioso: caja con sello de la marca, cinta de satén lavanda anudada a mano, tarjeta de agradecimiento « Made with love & care » y entrega rápida en todo Marruecos.' : 'Every Pearlie order arrives in our signature lavender-ribbon gift box with custom Pearlie thank-you cards (“Made with love & care”), round atelier seals, and nationwide delivery across Morocco.'}
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
                   <div className="p-3.5 rounded-2xl bg-white/[0.04] ring-1 ring-white/10">
@@ -1239,7 +1261,7 @@ export function App() {
                   ? 'أرشيف إنستغرام الكامل (24 منشوراً وريلز)'
                   : lang === 'fr'
                   ? 'Lookbook Complet Instagram (24 Publications & Reels)'
-                  : 'Complete 24-Post Instagram Lookbook & Reels'}
+                  : lang === 'es' ? 'Lookbook Completo de Instagram (24 Publicaciones y Reels)' : 'Complete 24-Post Instagram Lookbook & Reels'}
               </h2>
             </div>
 
@@ -1360,7 +1382,7 @@ export function App() {
                       ? 'المؤسسة والمبدعة وراء متجر Pearlie Handcrafted (@_pearlie.dreamy) ومساحة Little Calm Corner (@__little.calmcorner). طالبة هندسة في سنتها الأخيرة تجمع بين دقة التصميم وسحر الصناعة اليدوية.'
                       : lang === 'fr'
                       ? 'Fondatrice et créatrice de Pearlie Handcrafted (@_pearlie.dreamy) et de Little Calm Corner (@__little.calmcorner). Étudiante en dernière année d’ingénierie, elle façonne chaque pièce avec passion.'
-                      : 'Founder & artisan behind Pearlie Handcrafted (@_pearlie.dreamy) and Little Calm Corner (@__little.calmcorner) — uniting engineering precision with poetic pearl craftsmanship.'}
+                      : lang === 'es' ? 'Fundadora y creadora de Pearlie Handcrafted (@_pearlie.dreamy) y de Little Calm Corner (@__little.calmcorner). Estudiante de ingeniería en su último año, da forma a cada pieza con pasión.' : 'Founder & artisan behind Pearlie Handcrafted (@_pearlie.dreamy) and Little Calm Corner (@__little.calmcorner) — uniting engineering precision with poetic pearl craftsmanship.'}
                   </p>
                 </div>
               </div>
@@ -1376,7 +1398,7 @@ export function App() {
                     ? 'افتحي رسالة المفاجأة لإحسان 💌'
                     : lang === 'fr'
                     ? 'Ouvrir la Surprise pour Ihsane 💌'
-                    : 'Open Surprise Dedication for Ihsane 💌'}
+                    : lang === 'es' ? 'Abrir la Sorpresa para Ihsane 💌' : 'Open Surprise Dedication for Ihsane 💌'}
                 </span>
               </button>
             </div>
@@ -1404,7 +1426,7 @@ export function App() {
                   ? '© 2026 جميع الحقوق التجارية محفوظة لدار بِيرْلي وإحسان (@ihsane__ft) · التوصيل لجميع مدن المغرب 🚚🇲🇦'
                   : lang === 'fr'
                   ? '© 2026 Pearlie Handcrafted & Little Calm Corner · Propriété commerciale privée d’Ihsane (@ihsane__ft) · Tous droits réservés · Livraison partout au Maroc 🚚🇲🇦'
-                  : '© 2026 Pearlie Handcrafted & Little Calm Corner · Private Commercial Property of Ihsane (@ihsane__ft) · All Rights Reserved · Delivery all over Morocco 🚚🇲🇦'}
+                  : lang === 'es' ? '© 2026 Pearlie Handcrafted & Little Calm Corner · Propiedad comercial privada de Ihsane (@ihsane__ft) · Todos los derechos reservados · Envíos a todo Marruecos 🚚🇲🇦' : '© 2026 Pearlie Handcrafted & Little Calm Corner · Private Commercial Property of Ihsane (@ihsane__ft) · All Rights Reserved · Delivery all over Morocco 🚚🇲🇦'}
               </div>
             </div>
           </div>

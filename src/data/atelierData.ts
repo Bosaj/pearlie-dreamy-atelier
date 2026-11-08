@@ -1,4 +1,4 @@
-export type Language = 'en' | 'fr' | 'ar';
+export type Language = 'en' | 'fr' | 'es' | 'ar';
 
 export type ProductCategory =
   | 'all'
@@ -81,6 +81,7 @@ export const HIGHLIGHT_STORIES: HighlightStory[] = [
     subtitle: {
       en: 'Brand Manifesto & Soul',
       fr: 'Manifeste & Âme de la Maison',
+      es: 'Manifiesto y Alma de la Maison',
       ar: 'روح وهوية برلي',
     },
     image: './images/pearlie_dom_07.jpg',
@@ -93,6 +94,7 @@ export const HIGHLIGHT_STORIES: HighlightStory[] = [
     subtitle: {
       en: 'Regal Nacre & Lavender Silk',
       fr: 'Nacre Royale & Ruban Lavande',
+      es: 'Nácar Real y Cinta Lavanda',
       ar: 'مجموعة إلارييل الملكية',
     },
     image: './images/pearlie_dom_06.jpg',
@@ -105,6 +107,7 @@ export const HIGHLIGHT_STORIES: HighlightStory[] = [
     subtitle: {
       en: 'Airy Diamond-Lattice Pearl Totes',
       fr: 'Sacs Perlés Ajourés & Éthérés',
+      es: 'Bolsos de Perlas en Celosía de Diamante',
       ar: 'مجموعة سيليستين اللؤلؤية',
     },
     image: './images/pearlie_dom_05.jpg',
@@ -117,6 +120,7 @@ export const HIGHLIGHT_STORIES: HighlightStory[] = [
     subtitle: {
       en: 'Styled in Real Life Moments',
       fr: 'L’Élégance au Quotidien',
+      es: 'Elegancia en Momentos Reales',
       ar: 'لمسة برلي في إطلالتك',
     },
     image: './images/pearlie_dom_04.jpg',
@@ -129,6 +133,7 @@ export const HIGHLIGHT_STORIES: HighlightStory[] = [
     subtitle: {
       en: 'Lavender Ribbon Gift Unboxing',
       fr: 'Coffrets Cadeaux & Rubans Satin',
+      es: 'Estuches de Regalo con Cinta Lavanda',
       ar: 'تغليف الهدايا الفاخر',
     },
     image: './images/pearlie_dom_03.jpg',
@@ -141,6 +146,7 @@ export const HIGHLIGHT_STORIES: HighlightStory[] = [
     subtitle: {
       en: 'Bespoke Charms & Rose Quartz',
       fr: 'Porte-Clés & Créations Sur-Mesure',
+      es: 'Llaveros y Joyas de Perlas a Medida',
       ar: 'ميداليات وإكسسوارات يدوية',
     },
     image: './images/pearlie_dom_02.jpg',
@@ -153,6 +159,7 @@ export const HIGHLIGHT_STORIES: HighlightStory[] = [
     subtitle: {
       en: 'Loved Across Morocco',
       fr: 'Avis & Amour de nos Clientes',
+      es: 'Opiniones y Amor de Nuestras Clientas',
       ar: 'آراء زبوناتنا في المغرب',
     },
     image: './images/pearlie_dom_01.jpg',
@@ -188,21 +195,25 @@ export const PEARLIE_PRODUCTS: ProductItem[] = [
     title: {
       en: 'Noir Seraphim Kiss-Lock Clutch',
       fr: 'Pochette Noir Séraphin Fermoir Or',
+      es: 'Bolso Clutch Noir Seraphim Cierre Dorado',
       ar: 'حقيبة نوار سيرافيم الكريستالية السوداء',
     },
     subtitle: {
       en: 'Too angelic to be ordinary 🖤🪽',
       fr: 'Trop angélique pour être ordinaire 🖤🪽',
+      es: 'Demasiado angelical para ser ordinario 🖤🪽',
       ar: 'فخامة الكريستال الأسود مع مقبض ذهبي منحوت',
     },
     description: {
       en: 'Hand-knotted from over 1,180 high-refraction midnight onyx crystal beads, crowned with a vintage baroque floral gold handle, double kiss-lock clasp, and detachable gold chain.',
       fr: 'Tissée à la main avec plus de 1 180 perles de cristal onyx facettées, couronnée d’une poignée florale dorée ciselée, d’un fermoir kiss-lock rétro et d’une chaîne dorée amovible.',
+      es: 'Tejido a mano con más de 1.180 cuentas de cristal ónix de alta refracción, coronado con un asa dorada barroca floral, cierre kiss-lock vintage y cadena dorada desmontable.',
       ar: 'منسوجة يدوياً بأكثر من 1180 خرزة كريستال أونيكس أسود لامع، مزودة بمقبض ذهبي مزخرف بالورود وإطار إغلاق كلاسيكي مع سلسلة ذهبية.',
     },
     materials: {
       en: ['Faceted Onyx Crystal Beads', 'Baroque Floral Gold Handle', 'Kiss-Lock Brass Frame', 'Detachable Crossbody Chain'],
       fr: ['Cristaux Onyx Facettés', 'Poignée Florale Dorée', 'Fermoir Kiss-Lock Doré', 'Chaîne Bandoulière Amovible'],
+      es: ['Cristales Ónix Facetados', 'Asa Dorada Floral Barroca', 'Cierre Kiss-Lock Dorado', 'Cadena Bandolera Desmontable'],
       ar: ['كريستال أونيكس أسود متعدد الأوجه', 'مقبض ذهبي بنقش الزهور', 'إطار إغلاق معدني ذهبي', 'سلسلة كتف ذهبية قابلة للإزالة'],
     },
   },
@@ -231,21 +242,25 @@ export const PEARLIE_PRODUCTS: ProductItem[] = [
     title: {
       en: 'Ruby Empress Crystal Clutch',
       fr: 'Sac Impératrice Rubis & Or',
+      es: 'Bolso Clutch Emperatriz Rubí y Oro',
       ar: 'حقيبة الياقوت الأحمر الملكية',
     },
     subtitle: {
       en: 'Red crystal never goes unnoticed 🥀',
       fr: 'Le cristal rouge ne passe jamais inaperçu 🥀',
+      es: 'El cristal rojo nunca pasa desapercibido 🥀',
       ar: 'بريق الكريستال الأحمر لا يمرّ دون أن يخطف الأنظار 🥀',
     },
     description: {
       en: 'A breathtaking statement piece woven from deep pomegranate and ruby AB-coated crystals that catch every candlelight reflection, finished with an engraved gold arch handle.',
       fr: 'Une pièce maîtresse tissée de cristaux rubis et grenat aux reflets irisés qui captent chaque rayon de lumière, sublimée par une anse arquée dorée finement gravée.',
+      es: 'Una pieza deslumbrante tejida con cristales rubí y granate iridiscentes que capturan cada destello de luz, rematada con un asa arqueada dorada finamente grabada.',
       ar: 'تحفة يدوية منسوجة من كريستال الياقوت الأحمر الفاخر الذي يعكس الضوء ببريق ساحر، مع مقبض ذهبي منقوش وسلسلة أنيقة.',
     },
     materials: {
       en: ['Ruby AB Faceted Crystals', 'Engraved Filigree Gold Arch', 'Kiss-Lock Clasp', 'Gold Link Chain'],
       fr: ['Cristaux Rubis Facettés', 'Arche Dorée Filigranée', 'Fermoir Kiss-Lock', 'Chaîne Maillons Dorés'],
+      es: ['Cristales Rubí AB Facetados', 'Arco Dorado Filigranado', 'Cierre Kiss-Lock', 'Cadena de Eslabones Dorados'],
       ar: ['كريستال ياقوتي أحمر لامع', 'مقبض ذهبي منقوش', 'قفل كلاسيكي ذهبي', 'سلسلة ذهبية فاخرة'],
     },
   },
@@ -271,21 +286,25 @@ export const PEARLIE_PRODUCTS: ProductItem[] = [
     title: {
       en: 'Celestine Siren Mint & Nacre Bag',
       fr: 'Sac Célestine Nacre & Ruban Menthe d’Eau',
+      es: 'Bolso Célestine Nácar y Cinta Menta Marina',
       ar: 'حقيبة سيليستين باللؤلؤ والكريستال الأخضر المائي',
     },
     subtitle: {
       en: 'Ocean-kissed mother-of-pearl geometry 🫧🐚',
       fr: 'Géométrie nacrée embrassée par l’océan 🫧🐚',
+      es: 'Geometría nacarada besada por el océano 🫧🐚',
       ar: 'تناغم اللؤلؤ الأبيض مع شريط الكريستال المائي 🫧',
     },
     description: {
       en: 'Lustrous ivory glass pearls densely woven into a structured rectangular silhouette, crossed by an ethereal diagonal ribbon of translucent seafoam-emerald crystals.',
       fr: 'Perles de nacre ivoire tissées en une silhouette structurée, traversée par un ruban diagonal de cristaux vert d’eau translucides et sa bandoulière assortie.',
+      es: 'Perlas de nácar marfil tejidas en una silueta estructurada, cruzada por una cinta diagonal de cristales verde espuma de mar translúcidos con correa a juego.',
       ar: 'حقيبة منسوجة بإتقان من اللؤلؤ العاجي اللامع، يتوسطها شريط مائل من الكريستال الأخضر المائي الشفاف مع حزام كتف متناسق.',
     },
     materials: {
       en: ['High-Luster Ivory Pearls', 'Seafoam Emerald Crystals', 'Woven Pearl & Crystal Strap', 'Reinforced Monofilament Core'],
       fr: ['Perles Nacrees Ivoire', 'Cristaux Vert d’Eau', 'Bandoulière Perles & Cristaux', 'Tissage Haute Résistance'],
+      es: ['Perlas Marfil de Alto Brillo', 'Cristales Esmeralda Espuma de Mar', 'Correa de Perlas y Cristales', 'Tejido de Alta Resistencia'],
       ar: ['لؤلؤ عاجي عالي اللمعان', 'كريستال أخضر مائي شفاف', 'حزام منسوج من اللؤلؤ والكريستال', 'حياكة يدوية متينة'],
     },
   },
@@ -314,21 +333,25 @@ export const PEARLIE_PRODUCTS: ProductItem[] = [
     title: {
       en: 'Midnight Onyx Beaded-Arch Bag',
       fr: 'Sac Onyx de Minuit à Anse Perlée',
+      es: 'Bolso Ónix de Medianoche con Asa Tejida',
       ar: 'حقيبة أونيكس الليل بمقبض كريستالي منسوج',
     },
     subtitle: {
       en: 'Architectural crystal structure with Hand Made gold plate ✨',
       fr: 'Structure cristal architecturale & plaque dorée Hand Made ✨',
+      es: 'Estructura arquitectónica de cristal con placa dorada Hand Made ✨',
       ar: 'تصميم هندسي فاخر مع شارة ذهبية لصناعة يدوية متقنة ✨',
     },
     description: {
       en: 'Featuring a sculptural spiral-woven crystal top handle, gold kiss-lock frame, and signature engraved "Hand Made" brass plaque on deep jet-black crystal mesh.',
       fr: 'Doté d’une anse supérieure sculpturale tissée en spirale de cristal, d’un fermoir kiss-lock doré et de la plaque gravée « Hand Made ».',
+      es: 'Con un asa superior escultural tejida en espiral de cristal, marco kiss-lock dorado y la placa grabada « Hand Made » sobre malla de cristal negro azabache.',
       ar: 'تتميز بمقبض علوي منسوج بشكل حلزوني من الكريستال الأسود، وإطار ذهبي كلاسيكي مع لوحة ذهبية منقوشة بعبارة Hand Made.',
     },
     materials: {
       en: ['Jet-Black Faceted Crystals', 'Spiral-Woven Crystal Top Handle', 'Gold Kiss-Lock Frame', 'Signature Hand Made Brass Plate'],
       fr: ['Cristaux Noirs Facettés', 'Anse Torsadée en Cristal', 'Cadre Kiss-Lock Doré', 'Plaque Laiton Hand Made'],
+      es: ['Cristales Negros Facetados', 'Asa Superior en Espiral de Cristal', 'Marco Kiss-Lock Dorado', 'Placa de Latón Hand Made'],
       ar: ['كريستال أسود لامع', 'مقبض علوي منسوج من الكريستال', 'إطار إغلاق ذهبي', 'لوحة Hand Made الذهبية'],
     },
   },
@@ -358,21 +381,25 @@ export const PEARLIE_PRODUCTS: ProductItem[] = [
     title: {
       en: 'Wild Leopard Crystal Flap Bag',
       fr: 'Sac Rabat Cristal Motif Léopard',
+      es: 'Bolso de Cristal con Solapa Diseño Leopardo',
       ar: 'حقيبة الكريستال بنقشة الفهد الفاخرة',
     },
     subtitle: {
       en: 'Three-tone crystal intarsia woven bead by bead 🐆',
       fr: 'Intarsia de cristal trois tons tissé perle par perle 🐆',
+      es: 'Intarsia de cristal en tres tonos tejida cuenta por cuenta 🐆',
       ar: 'منسوجة خرزة بخرزة بثلاثة ألوان من الكريستال اللامع 🐆',
     },
     description: {
       en: 'Our most intricate pattern work: champagne quartz, warm cognac amber, and jet onyx crystals hand-mapped into a couture leopard intarsia flap bag with gold chain.',
       fr: 'Notre travail de motif le plus complexe : quartz champagne, ambre cognac et onyx noir assemblés à la main en un motif léopard couture avec chaîne dorée.',
+      es: 'Nuestro diseño más intrincado: cuarzo champán, ámbar coñac y ónix negro tejidos a mano en un bolso de alta costura con estampado de leopardo y cadena dorada.',
       ar: 'أكثر التصاميم دقة وإبداعاً: مزيج متناغم من كريستال الشامبانيا والعنبر الذهبي والأونيكس الأسود في نقشة الفهد الأنيقة مع سلسلة ذهبية.',
     },
     materials: {
       en: ['Champagne, Cognac & Onyx Crystals', 'Magnetic Flap Closure', 'Hand Made Gold Plaque', 'Heavy Gold Crossbody Chain'],
       fr: ['Cristaux Champagne, Cognac & Onyx', 'Rabat Structuré', 'Plaque Dorée Hand Made', 'Chaîne Bandoulière Dorée'],
+      es: ['Cristales Champán, Coñac y Ónix', 'Solapa Estructurada', 'Placa Dorada Hand Made', 'Cadena Bandolera Dorada'],
       ar: ['كريستال شامبانيا وعنبر وأسود', 'غطاء أمامي محكم', 'لوحة Hand Made الذهبية', 'سلسلة كتف ذهبية'],
     },
   },
@@ -401,21 +428,25 @@ export const PEARLIE_PRODUCTS: ProductItem[] = [
     title: {
       en: 'Amber Honey Crystal Kiss-Lock Bag',
       fr: 'Sac Cristal Ambre Miel & Fermoir Doré',
+      es: 'Bolso de Cristal Ámbar Miel con Cierre Dorado',
       ar: 'حقيبة كريستال العنبر العسلي',
     },
     subtitle: {
       en: 'Warm cognac crystals that glow like liquid honey 🍯✨',
       fr: 'Cristaux cognac chaleureux brillant comme un miel doré 🍯✨',
+      es: 'Cristales coñac cálidos que brillan como miel dorada 🍯✨',
       ar: 'بريق العنبر الدافئ يضيء كالعسل الصافي 🍯✨',
     },
     description: {
       en: 'Handwoven from translucent cognac-amber faceted crystals with a matching beaded top handle, vintage gold kiss-lock frame, and engraved brass badge.',
       fr: 'Tissé à la main à partir de cristaux facettés ambre cognac translucides, avec poignée perlée assortie et fermoir kiss-lock doré.',
+      es: 'Tejido a mano con cristales facetados ámbar coñac translúcidos, asa superior tejida a juego y cierre kiss-lock dorado vintage.',
       ar: 'منسوجة يدوياً من كريستال العنبر الشفاف متعدد الأوجه مع مقبض علوي منسوج وإطار ذهبي كلاسيكي.',
     },
     materials: {
       en: ['Cognac Amber Faceted Crystals', 'Sculpted Beaded Handle', 'Gold Kiss-Lock Frame', 'Hand Made Brass Tag'],
       fr: ['Cristaux Ambre Cognac', 'Poignée Perlée Sculptée', 'Fermoir Kiss-Lock Or', 'Plaque Laiton Hand Made'],
+      es: ['Cristales Ámbar Coñac', 'Asa Tejida Esculpida', 'Marco Kiss-Lock Dorado', 'Placa Hand Made'],
       ar: ['كريستال عنبري شفاف', 'مقبض علوي منسوج', 'قفل ذهبي كلاسيكي', 'شارة ذهبية منقوشة'],
     },
   },
@@ -445,21 +476,25 @@ export const PEARLIE_PRODUCTS: ProductItem[] = [
     title: {
       en: 'Celestine Diamond-Lattice Pearl Tote',
       fr: 'Cabas Perlé Ajouré Célestine & Nœud Nacré',
+      es: 'Bolso Tote Célestine de Perlas en Celosía y Lazo',
       ar: 'حقيبة سيليستين الشبكية باللؤلؤ الأبيض',
     },
     subtitle: {
       en: 'Airy diamond-mesh pearl architecture with bow charm 🦢',
       fr: 'Architecture perlée ajourée en losanges avec bijou nœud 🦢',
+      es: 'Arquitectura calada de perlas en rombos con charm de lazo 🦢',
       ar: 'تصميم شبكي ماسي من اللؤلؤ الأبيض مع تعليقة فيونكة لؤلؤية 🦢',
     },
     description: {
       en: 'An airy, romantic trapezoid tote crafted in open diamond-lattice pearl work, complete with twin pearl handles and a detachable pearl ribbon charm.',
       fr: 'Un cabas trapèze aérien et romantique réalisé en résille de perles losangée, accompagné de doubles anses perlées et d’un bijou nœud en perles.',
+      es: 'Un bolso trapecio etéreo y romántico elaborado en celosía de perlas en forma de diamante, con asas dobles de perlas y un colgante de lazo nacarado.',
       ar: 'حقيبة ساحرة بتصميم شبكي ماسي من اللؤلؤ الأبيض النقي، مزودة بمقبضين من اللؤلؤ وتعليقة فيونكة لؤلؤية رقيقة.',
     },
     materials: {
       en: ['Multi-Size Luster Pearls', 'Diamond Lattice Weave', 'Twin Pearl Shoulder Straps', 'Matching Pearl Bow Charm'],
       fr: ['Perles Nacrees Multi-Tailles', 'Tissage Résille Losange', 'Doubles Anses Perlées', 'Bijou Nœud en Perles Inclus'],
+      es: ['Perlas Nacaradas Multitamaño', 'Tejido en Celosía de Diamante', 'Asas Dobles de Perlas', 'Charm de Lazo de Perlas Incluido'],
       ar: ['لؤلؤ أبيض بأحجام متدرجة', 'حياكة شبكية ماسية', 'مقبضين من اللؤلؤ', 'تعليقة فيونكة لؤلؤية مرفقة'],
     },
   },
@@ -485,21 +520,25 @@ export const PEARLIE_PRODUCTS: ProductItem[] = [
     title: {
       en: 'Ivory Lumina Champagne Crystal Clutch',
       fr: 'Pochette Lumina Cristal Ivoire Champagne',
+      es: 'Clutch Lumina de Cristal Marfil Champán',
       ar: 'حقيبة لومينا بكريستال الشامبانيا العاجي',
     },
     subtitle: {
       en: 'Starlight champagne refraction for bridal & gala nights ✨',
       fr: 'Réfraction champagne étoilée pour vos soirées d’exception ✨',
+      es: 'Refracción champán estelar para noches de gala y novias ✨',
       ar: 'إشراقة الشامبانيا العاجية لليالي المناسبات والأعراس ✨',
     },
     description: {
       en: 'Woven from translucent champagne-ivory crystals with a luminous inner glow, paired with a vintage gold kiss-lock frame and detachable chain.',
       fr: 'Tissée de cristaux champagne-ivoire translucides à l’éclat lumineux, dotée d’un fermoir kiss-lock doré et d’une chaîne amovible.',
+      es: 'Tejido con cristales marfil-champán translúcidos de brillo luminoso, acompañado de un cierre kiss-lock dorado vintage y cadena desmontable.',
       ar: 'منسوجة من كريستال الشامبانيا العاجي الشفاف الذي يشع بنور هادئ، مع إطار ذهبي كلاسيكي وسلسلة كتف.',
     },
     materials: {
       en: ['Champagne Ivory AB Crystals', 'Gold Kiss-Lock Frame', 'Gold Crossbody Chain', 'Silk-Soft Inner Lining Option'],
       fr: ['Cristaux Ivoire Champagne AB', 'Fermoir Kiss-Lock Or', 'Chaîne Dorée', 'Finition Haute Couture'],
+      es: ['Cristales Marfil Champán AB', 'Marco Kiss-Lock Dorado', 'Cadena Dorada', 'Acabado Alta Costura'],
       ar: ['كريستال شامبانيا عاجي لامع', 'قفل ذهبي كلاسيكي', 'سلسلة ذهبية للكتف', 'تشطيب يدوي فاخر'],
     },
   },
@@ -527,21 +566,25 @@ export const PEARLIE_PRODUCTS: ProductItem[] = [
     title: {
       en: 'Elarielle 01 — Lavender Ribbon Pearl Bag',
       fr: 'Sac Elarielle 01 — Perles & Rubans Lavande',
+      es: 'Bolso Elarielle 01 — Perlas y Cintas Lavanda',
       ar: 'حقيبة إلارييل 01 باللؤلؤ وشرائط اللافندر',
     },
     subtitle: {
       en: 'Coquette lavender satin meets timeless oversized pearls 🔮',
       fr: 'Le satin lavande coquette rencontre la perle intemporelle 🔮',
+      es: 'El satén lavanda coquette se une a las perlas atemporales 🔮',
       ar: 'التقاء اللؤلؤ الكلاسيكي مع شرائط الساتان بلون اللافندر 🔮',
     },
     description: {
       en: 'Named after our signature Elarielle collection, this structured pearl handbag features sculpted round pearl handles and delicate pastel lavender satin bows.',
       fr: 'Issue de notre collection signature Elarielle, ce sac structuré en perles nacrées est orné d’anses rondes et de nœuds en satin lavande pastel.',
+      es: 'Inspirado en nuestra colección insignia Elarielle, este bolso estructurado de perlas nacaradas luce asas redondas esculpidas y delicados lazos de satén lavanda pastel.',
       ar: 'من مجموعة إلارييل المميزة، حقيبة لؤلؤية بمقبض دائري أنيق ومزينة بفيونكات من الساتان بلون اللافندر الحالم.',
     },
     materials: {
       en: ['Oversized Nacre Pearls', 'Pastel Lavender Satin Ribbons', 'Sculpted Circular Pearl Handle', 'Pearl Crossbody Strap'],
       fr: ['Grandes Perles Nacrees', 'Rubans Satin Lavande Pastel', 'Poignée Ronde Perlée', 'Bandoulière en Perles'],
+      es: ['Perlas Nacaradas Grandes', 'Cintas de Satén Lavanda Pastel', 'Asa Circular Esculpida de Perlas', 'Correa Bandolera de Perlas'],
       ar: ['خرز لؤلؤ كبير عالي اللمعان', 'شرائط ساتان لافندر', 'مقبض دائري من اللؤلؤ', 'حزام كتف لؤلؤي'],
     },
   },
@@ -570,21 +613,25 @@ export const PEARLIE_PRODUCTS: ProductItem[] = [
     title: {
       en: 'Nacre Pearl AirPods & Mini Essentials Case',
       fr: 'Étui AirPods & Mini Pochette en Perles Nacrees',
+      es: 'Estuche para AirPods y Mini Esenciales de Perlas Nacaradas',
       ar: 'حافظة سماعات وميني باوتش من اللؤلؤ الطبيعي',
     },
     subtitle: {
       en: 'Magnetic snap closure + beaded pearl wristlet strap 🤍',
       fr: 'Bouton-pression métallique & dragonne en perles 🤍',
+      es: 'Cierre a presión metálico + muñequera de perlas 🤍',
       ar: 'زر إغلاق معدني محكم مع تعليقة معصم لؤلؤية 🤍',
     },
     description: {
       en: 'Turn your everyday AirPods or mini essentials into a piece of jewelry. Hand-woven with pure white pearls, metal snap button, silver carabiner clip, and pearl wristlet.',
       fr: 'Transformez vos AirPods ou petits essentiels en bijou. Tissé à la main en perles blanches avec bouton-pression, mousqueton argenté et dragonne perlée.',
+      es: 'Convierte tus AirPods o mini esenciales diarios en una joya. Tejido a mano con perlas blancas puras, botón a presión metálico, mosquetón plateado y muñequera de perlas.',
       ar: 'حولي سماعاتك ومقتنياتك اليومية إلى قطعة مجوهرات أنيقة، منسوجة يدوياً من اللؤلؤ الأبيض مع قفل معدني وحزام معصم لؤلؤي.',
     },
     materials: {
       en: ['Pure White Luster Pearls', 'Metal Snap Closure', 'Silver Swivel Clasp', 'Beaded Pearl Wristlet'],
       fr: ['Perles Blanches Nacrees', 'Bouton-Pression Métal', 'Mousqueton Argenté', 'Dragonne en Perles'],
+      es: ['Perlas Blancas Nacaradas Puras', 'Cierre a Presión Metálico', 'Mosquetón Plateado Giratorio', 'Muñequera de Perlas'],
       ar: ['لؤلؤ أبيض ناصع', 'زر إغلاق معدني', 'مشبك فضي متين', 'سوار معصم من اللؤلؤ'],
     },
   },
@@ -610,21 +657,25 @@ export const PEARLIE_PRODUCTS: ProductItem[] = [
     title: {
       en: 'Bespoke Alphabet Initial Pearl Keychain (A–Z)',
       fr: 'Porte-Clés Initiale Alphabet Sur-Mesure (A–Z)',
+      es: 'Llavero Inicial Personalizado de Perlas (A–Z)',
       ar: 'ميدالية الحروف الأبجدية باللؤلؤ والكريستال (A–Z)',
     },
     subtitle: {
       en: 'Your initial sculpted in 3D pearls & champagne crystals 🔤✨',
       fr: 'Votre initiale sculptée en 3D en perles & cristaux champagne 🔤✨',
+      es: 'Tu inicial esculpida en 3D con perlas y cristales champán 🔤✨',
       ar: 'حرفكِ المفضل منسوج بتصميم ثلاثي الأبعاد من اللؤلؤ والكريستال 🔤✨',
     },
     description: {
       en: 'Every letter from A to Z custom-woven to order! Crafted with double-layered white pearls edged with warm champagne crystal seed beads on a polished keyring.',
       fr: 'Chaque lettre de A à Z tissée sur commande ! Double rangée de perles blanches bordées de cristaux champagne dorés sur anneau poli.',
+      es: '¡Cada letra de la A a la Z tejida a medida! Doble capa de perlas blancas bordeadas con cuentas de cristal champán dorado sobre una argolla pulida.',
       ar: 'جميع الحروف من A إلى Z تُنسج خصيصاً حسب طلبك! مصممة بطبقتين من اللؤلؤ الأبيض المطعم بكريستال الشامبانيا اللامع.',
     },
     materials: {
       en: ['Custom Letter A–Z', 'White Core Pearls', 'Champagne Crystal Trim', 'Stainless Keyring'],
       fr: ['Lettre Personnalisée A–Z', 'Perles Blanches Nacrees', 'Bordure Cristal Champagne', 'Anneau Porte-Clés Acier'],
+      es: ['Letra Personalizada A–Z', 'Perlas Blancas Nacaradas', 'Ribete de Cristal Champán', 'Argolla de Acero Inoxidable'],
       ar: ['اختيار أي حرف من A إلى Z', 'لؤلؤ أبيض فاخر', 'تطعيمات كريستال شامبانيا', 'حلقة مفاتيح متينة'],
     },
   },
@@ -650,21 +701,25 @@ export const PEARLIE_PRODUCTS: ProductItem[] = [
     title: {
       en: 'Micro Pearl Tote Bag Charm & Keychain',
       fr: 'Mini Sac Perlé Bijou de Sac & Porte-Clés',
+      es: 'Mini Bolso de Perlas: Charm y Llavero',
       ar: 'ميدالية الحقيبة اللؤلؤية المصغّرة',
     },
     subtitle: {
       en: 'A miniature Pearlie handbag for your keys or tote 👜🤍',
       fr: 'Un sac Pearlie miniature pour vos clés ou votre sac 👜🤍',
+      es: 'Un bolso Pearlie en miniatura para tus llaves o tu bolso 👜🤍',
       ar: 'نسخة مصغّرة ساحرة من حقيبة برلي لمفاتيحك أو حقيبتك 👜🤍',
     },
     description: {
       en: 'An adorable miniature version of our signature woven pearl tote bag, complete with tiny arched pearl handles and a polished keyring.',
       fr: 'Une adorable version miniature de notre sac cabas en perles, dotée de petites anses arquées et d’un anneau porte-clés.',
+      es: 'Una adorable versión en miniatura de nuestro bolso tote de perlas tejidas, con diminutas asas arqueadas de perlas y una argolla pulida.',
       ar: 'تصميم مصغّر فائق الأناقة لحقيبة اللؤلؤ الأيقونية مع مقبض صغير وحلقة مفاتيح فضية.',
     },
     materials: {
       en: ['Ivory Luster Pearls', 'Mini Arched Handle', 'Polished Silver Keyring & Chain'],
       fr: ['Perles Ivoire Nacrees', 'Mini Anse Arquée', 'Anneau & Chaînette Argentés'],
+      es: ['Perlas Marfil Nacaradas', 'Mini Asa Arqueada', 'Argolla y Cadenita Plateadas'],
       ar: ['لؤلؤ عاجي لامع', 'مقبض علوي مصغر', 'حلقة وسلسلة فضية'],
     },
   },
@@ -692,21 +747,25 @@ export const PEARLIE_PRODUCTS: ProductItem[] = [
     title: {
       en: 'Coquette Pearl & Crystal Ribbon Keychain',
       fr: 'Porte-Clés Nœud Coquette Perles & Cristal',
+      es: 'Llavero Lazo Coquette de Perlas y Cristal',
       ar: 'ميدالية فيونكة اللؤلؤ والكريستال',
     },
     subtitle: {
       en: 'Available in Champagne Rose, Amethyst Lilac, Sakura Pink & Sky Blue 🎀',
       fr: 'Disponible en Rose Champagne, Lilas Améthyste, Rose Sakura & Bleu Ciel 🎀',
+      es: 'Disponible en Rosa Champán, Lila Amatista, Rosa Sakura y Azul Cielo 🎀',
       ar: 'متوفرة بألوان الشامبانيا الوردي، البنفسجي، الوردي والأزرق السماوي 🎀',
     },
     description: {
       en: 'Double-looped coquette ribbon combining luminous graduated white pearls with sparkling faceted crystal ribbons, crowned by a central statement pearl.',
       fr: 'Nœud coquette double boucle associant des perles blanches graduées à des rubans de cristaux facettés étincelants autour d’une grande perle centrale.',
+      es: 'Lazo coquette de doble lazada que combina perlas blancas graduadas con cintas de cristal facetado brillante, coronado por una perla central.',
       ar: 'فيونكة أنيقة تجمع بين اللؤلؤ الأبيض المتدرج وشرائط الكريستال البراقة مع لؤلؤة كبيرة في المنتصف.',
     },
     materials: {
       en: ['Graduated Nacre Pearls', 'Faceted Crystal Ribbons', 'Gold or Silver Keyring'],
       fr: ['Perles Nacrees Graduées', 'Rubans Cristal Facetté', 'Anneau Doré ou Argenté'],
+      es: ['Perlas Nacaradas Graduadas', 'Cintas de Cristal Facetado', 'Argolla Dorada o Plateada'],
       ar: ['لؤلؤ متدرج الأحجام', 'شرائط كريستال لامعة', 'حلقة ذهبية أو فضية'],
     },
   },
@@ -733,21 +792,25 @@ export const PEARLIE_PRODUCTS: ProductItem[] = [
     title: {
       en: 'Crimson Puffed Heart Crystal Keychain',
       fr: 'Porte-Clés Cœur Bombé en Cristal Rubis',
+      es: 'Llavero Corazón Abombado de Cristal Carmesí',
       ar: 'ميدالية القلب الثلاثي الأبعاد بكريستال الياقوت',
     },
     subtitle: {
       en: '3D faceted ruby crystal heart on a gold ring ❤️',
       fr: 'Cœur 3D en cristal rubis facetté sur anneau doré ❤️',
+      es: 'Corazón 3D de cristal rubí facetado sobre argolla dorada ❤️',
       ar: 'قلب ثلاثي الأبعاد من الكريستال الأحمر اللامع مع حلقة ذهبية ❤️',
     },
     description: {
       en: 'A plump, three-dimensional heart woven from large iridescent ruby crystals that shimmer in scarlet and magenta tones, hung from a gold keyring.',
       fr: 'Un cœur tridimensionnel bombé tissé de grands cristaux rubis irisés aux reflets écarlates, monté sur un anneau doré.',
+      es: 'Un corazón tridimensional abombado tejido con grandes cristales rubí iridiscentes que brillan en tonos escarlata y magenta, colgado de una argolla dorada.',
       ar: 'تصميم قلب منتفخ ثلاثي الأبعاد منسوج من حبات الكريستال الأحمر المتألق مع حلقة مفاتيح ذهبية.',
     },
     materials: {
       en: ['Large Faceted Ruby AB Crystals', '3D Puff Weave', '24K-Tone Gold Keyring'],
       fr: ['Grands Cristaux Rubis AB', 'Tissage 3D Bombé', 'Anneau Doré'],
+      es: ['Grandes Cristales Rubí AB Facetados', 'Tejido 3D Abombado', 'Argolla Dorada'],
       ar: ['كريستال ياقوتي أحمر كبير', 'حياكة ثلاثية الأبعاد', 'حلقة مفاتيح ذهبية'],
     },
   },
@@ -774,21 +837,25 @@ export const PEARLIE_PRODUCTS: ProductItem[] = [
     title: {
       en: 'Sakura Blossom Pearl & Rose Seed Keychain',
       fr: 'Porte-Clés Fleur de Sakura Perles & Rocaille Rose',
+      es: 'Llavero Flor de Sakura con Perlas y Cuentas Rosa',
       ar: 'ميدالية زهرة الساكورا باللؤلؤ والخرز الوردي',
     },
     subtitle: {
       en: 'As seen on Little Calm Corner’s planner desk 🌸🤍',
       fr: 'Aperçu sur le bureau de Little Calm Corner 🌸🤍',
+      es: 'Como se ve en el escritorio de Little Calm Corner 🌸🤍',
       ar: 'إطلالة ناعمة تجمع اللؤلؤ العاجي باللون الوردي الهادئ 🌸🤍',
     },
     description: {
       en: 'Three petal loops of ivory pearls outlined with delicate rose-pink glass seed beads and finished with twin oversized pearl drops.',
       fr: 'Trois boucles de perles ivoire doublées de perles de rocaille rose tendre et terminées par deux grandes perles nacrées.',
+      es: 'Tres lazadas de pétalos de perlas marfil perfiladas con delicadas cuentas de vidrio rosa y rematadas con dos grandes perlas colgantes.',
       ar: 'ثلاث حلقات بتلات من اللؤلؤ العاجي المحاط بخرز وردي ناعم وتنتهي بلؤلؤتين كبيرتين.',
     },
     materials: {
       en: ['Ivory Glass Pearls', 'Rose Pink Seed Beads', 'Polished Silver Keyring'],
       fr: ['Perles de Verre Ivoire', 'Perles de Rocaille Rose', 'Anneau Argenté'],
+      es: ['Perlas de Vidrio Marfil', 'Cuentas Rosa Pálido', 'Argolla Plateada Pulida'],
       ar: ['لؤلؤ عاجي ناعم', 'خرز وردي شفاف', 'حلقة مفاتيح فضية'],
     },
   },
@@ -815,21 +882,25 @@ export const PEARLIE_PRODUCTS: ProductItem[] = [
     title: {
       en: 'Pure Nacre Daisy & Lavender Satin Keychains',
       fr: 'Porte-Clés Marguerite Nacrée & Ruban Lavande',
+      es: 'Llaveros Margarita de Nácar Puro y Cinta de Satén Lavanda',
       ar: 'ميدالية زهرة الأقحوان اللؤلؤية وشريط اللافندر',
     },
     subtitle: {
       en: 'Minimalist 6-petal pearl flower or lavender satin halo 🌸',
       fr: 'Fleur 6 pétales tout en perles ou halo satin lavande 🌸',
+      es: 'Flor minimalista de 6 pétalos de perlas o aro con satén lavanda 🌸',
       ar: 'زهرة سداسية البتلات من اللؤلؤ الأبيض أو حلقة لؤلؤ بشريط اللافندر 🌸',
     },
     description: {
       en: 'Available as the 6-petal Pure Nacre Daisy flower charm or the Lilac Satin & Pearl Halo charm on a gold ring.',
       fr: 'Disponible en version Marguerite à 6 pétales nacrés ou en version Halo de perles surmonté d’un nœud en satin lavande.',
+      es: 'Disponible como charm de margarita nacarada de 6 pétalos o como charm de aro de perlas con satén lila, sobre argolla dorada.',
       ar: 'متوفرة بتصميم زهرة الأقحوان ذات الست بتلات اللؤلؤية أو حلقة اللؤلؤ المزينة بفيونكة الساتان البنفسجية.',
     },
     materials: {
       en: ['Pure White Pearls', 'Lavender Satin Bow Option', 'Silver or Gold Keyring'],
       fr: ['Perles Blanches Pures', 'Option Nœud Satin Lavande', 'Anneau Argenté ou Doré'],
+      es: ['Perlas Blancas Puras', 'Opción de Lazo de Satén Lavanda', 'Argolla Plateada o Dorada'],
       ar: ['لؤلؤ أبيض ناصع', 'خيار فيونكة ساتان لافندر', 'حلقة فضية أو ذهبية'],
     },
   },
@@ -1114,6 +1185,7 @@ export const CALM_CORNER_POSTS: CalmCornerItem[] = [
     title: {
       en: 'Welcome to Little Calm Corner',
       fr: 'Bienvenue dans ce Petit Coin de Douceur',
+      es: 'Bienvenida a Little Calm Corner',
       ar: 'أهلاً بكِ في ركن الهدوء الصغير',
     },
     caption:
@@ -1121,6 +1193,7 @@ export const CALM_CORNER_POSTS: CalmCornerItem[] = [
     soulNote: {
       en: "A place for calm thoughts, gentle motivation, and small reminders that life doesn't have to be rushed. Take a deep breath… 🌷☁️",
       fr: 'Un refuge pour les pensées calmes, la motivation douce et ces petits rappels que la vie n’a pas besoin d’être pressée. Respirez profondément… 🌷☁️',
+      es: 'Un lugar para pensamientos tranquilos, motivación suave y pequeños recordatorios de que la vida no tiene que vivirse con prisa. Respira hondo… 🌷☁️',
       ar: 'مساحة للأفكار الهادئة، والتحفيز اللطيف، وتذكير بسيط بأن الحياة لا يجب أن تكون في عجلة دائمة. خذي نفساً عميقاً... 🌷☁️',
     },
   },
@@ -1135,12 +1208,14 @@ export const CALM_CORNER_POSTS: CalmCornerItem[] = [
     title: {
       en: 'It’s “NO”VEMBER — Gentle Boundaries',
       fr: 'C’est “NO”VEMBRE — Douces Résolutions',
+      es: 'Es “NO”VIEMBRE — Límites Suaves',
       ar: 'نوفمبر السلام الداخلي والتركيز اللطيف',
     },
     caption: "It's November 🧚🏻‍♀️⏳️✨️🩰\nNo drama · No negative self-talk · No comparing myself to others · No excuses\n#vibe #lifestyle #fyp #viral #trend",
     soulNote: {
       en: 'No drama. No negative self-talk. No comparing myself to others. No excuses. Just my planner, my Pearlie charms, and quiet progress.',
       fr: 'Pas de drame. Pas de discours intérieur négatif. Ne plus se comparer aux autres. Juste mon carnet, mes créations Pearlie et une progression sereine.',
+      es: 'Sin drama. Sin diálogo interno negativo. Sin compararme con los demás. Sin excusas. Solo mi agenda, mis charms Pearlie y un progreso tranquilo.',
       ar: 'لا للدراما، لا لجلد الذات، لا لمقارنة نفسي بالآخرين. فقط دفتري، إبداعات برلي، وخطوات هادئة نحو الحلم.',
     },
   },
@@ -1155,12 +1230,14 @@ export const CALM_CORNER_POSTS: CalmCornerItem[] = [
     title: {
       en: 'Girls Therapy — Creating With Love',
       fr: 'Girls Therapy — Créer avec Amour',
+      es: 'Girls Therapy — Crear con Amor',
       ar: 'علاج الروح — صناعة الجمال بالحب',
     },
     caption: '🎀🫧✨️\n#lifestyle #goodvibes #fyp #viral #trend',
     soulNote: {
       en: 'Weaving pearls, organizing dreams, and turning quiet afternoons into tangible beauty.',
       fr: 'Tisser des perles, organiser ses rêves et transformer les après-midis paisibles en beauté tangible.',
+      es: 'Tejer perlas, organizar sueños y convertir tardes tranquilas en belleza tangible.',
       ar: 'نسج اللؤلؤ، ترتيب الأحلام، وتحويل الأوقات الهادئة إلى قطع فنية ملموسة.',
     },
   },
@@ -1175,12 +1252,14 @@ export const CALM_CORNER_POSTS: CalmCornerItem[] = [
     title: {
       en: 'Making Little Memories Along the Way',
       fr: 'Créer de Précieux Souvenirs en Chemin',
+      es: 'Creando Pequeños Recuerdos en el Camino',
       ar: 'صناعة ذكريات جميلة في رحلة الدراسة',
     },
     caption: 'Making little memories along the way 🥺📚\n#shcool #friends #goodvibes #viral #fyp',
     soulNote: {
       en: 'Integration Day at ENIAD — balancing engineering ambition with the poetry of everyday friendship.',
       fr: 'Journée d’intégration à l’ENIAD — allier l’ambition d’ingénieure à la poésie des amitiés du quotidien.',
+      es: 'Día de integración en la ENIAD: equilibrando la ambición de ingeniera con la poesía de la amistad cotidiana.',
       ar: 'يوم الاندماج في المدرسة الوطنية للذكاء الاصطناعي والرقمنة — التوازن بين طموح الهندسة وجمال الذكريات.',
     },
   },
@@ -1195,12 +1274,14 @@ export const CALM_CORNER_POSTS: CalmCornerItem[] = [
     title: {
       en: 'Back For One Last Year',
       fr: 'De Retour Pour Notre Dernière Année',
+      es: 'De Vuelta para un Último Año',
       ar: 'العودة للسنة الأخيرة من رحلة التخرج',
     },
     caption: 'Getting ready and heading back to the city where I study… for our last year here 🥺🤍\n#lifestyle #study #goodvibes #viral #fyp',
     soulNote: {
       en: 'Heading back to the city where I study for our final chapter — cherishing every mile of the journey.',
       fr: 'Sur la route vers la ville de mes études pour notre dernière année — chérir chaque instant du voyage.',
+      es: 'Regresando a la ciudad donde estudio para nuestro último capítulo, valorando cada kilómetro del camino.',
       ar: 'العودة إلى مدينة الدراسة لبداية الفصل الأخير — نعتزّ بكل خطوة ولحظة في هذه الرحلة.',
     },
   },
@@ -1222,6 +1303,14 @@ export const SOUL_AFFIRMATIONS: Record<Language, string[]> = {
     '« Read it. Dream it. Do it ! Chaque perle tissée avec patience devient un bijou. »',
     '« Pas de drame, pas de comparaison aux autres — brillez à votre propre manière. »',
     '« Chaque pièce est façonnée à la main avec amour et minutie dans chaque petit détail. »',
+  ],
+  es: [
+    '“Pearlie representa un tipo de belleza que no necesita hacer ruido para ser notada.” — Ihsane',
+    '“Un suave recordatorio de que eres vista, única, hermosa y suficiente.” — Manifiesto Pearlie',
+    '“La vida no tiene que vivirse con prisa. Respira hondo… 🌷☁️” — Little Calm Corner',
+    '“Read it. Dream it. Do it! Cada perla tejida con paciencia se convierte en una corona.”',
+    '“Sin drama, sin diálogo interno negativo, sin compararte con los demás: brilla a tu manera.”',
+    '“Cada pieza está hecha a mano con amor, para que brilles con tu elegancia silenciosa.”',
   ],
   ar: [
     '« برلي تمثل نوعاً من الجمال الهادئ الذي لا يحتاج إلى ضجيج ليُلفت الأنظار. » — إحسان',

@@ -4,7 +4,7 @@
 
 **Live Production (GitHub Pages):** [https://bosaj.github.io/pearlie-dreamy-atelier/](https://bosaj.github.io/pearlie-dreamy-atelier/)  
 **WhatsApp Atelier Concierge:** [https://wa.me/message/HYSIBOQVMTCAE1](https://wa.me/message/HYSIBOQVMTCAE1)  
-**Status:** v1.3.0 · **Owner & Founder:** [Ihsane FATHI (`@IhsaneFathi` / `@ihsane__ft`)](https://github.com/IhsaneFathi)
+**Status:** v1.4.0 · **Owner & Founder:** [Ihsane FATHI (`@IhsaneFathi` / `@ihsane__ft`)](https://github.com/IhsaneFathi)
 
 [![CI](https://github.com/Bosaj/pearlie-dreamy-atelier/actions/workflows/ci.yml/badge.svg)](https://github.com/Bosaj/pearlie-dreamy-atelier/actions/workflows/ci.yml)
 [![Pages](https://github.com/Bosaj/pearlie-dreamy-atelier/actions/workflows/deploy.yml/badge.svg)](https://bosaj.github.io/pearlie-dreamy-atelier/)
@@ -38,7 +38,7 @@
   - **3 Behind-the-Scenes Story Highlights** (*My business 💎*, *Soft Planner 🤍*, *Cozy Breaks 🎬*) and **5 Reels & Posts** including her ENIAD engineering school integration day and final-year study vlogs.
 - **Diwan al-Durr — Classical Arabic Poetry & Moroccan Maghribi Calligraphy (`src/components/MaghribiPoetryDiwan.tsx`)** — Dedicated Arabic poetic pavilion (`#diwan`) featuring 4 classical Arabic poems (*Bahr al-Kamil*, *Bahr al-Basit*, *Bahr al-Wafir*, and *Al-Muwashshah al-Maghribi*) composed in honor of **Ihsane (`@ihsane__ft`)**, **Pearlie Handcrafted**, and **Little Calm Corner**, rendered in authentic **`Bouazzi Maghribi`** script (`public/fonts/BouazziMaghribi-Regular.woff2`) with a live 3-calligraphy switcher (`الخط المغربي` / `خط الرقعة` / `الخط الأميري`), translation toggle, and 1-click poem copy.
 - **Founder & Artisan Surprise Dedication (`src/components/FounderSurpriseModal.tsx`)** — Dedicated tribute to **Ihsane FATHI (`@IhsaneFathi` / `@ihsane__ft`)** with celebratory pearl sparkles, Maghribi calligraphic couplets, and trilingual dedication letters (`EN` / `FR` / `ع`).
-- **Trilingual (`EN` / `FR` / `AR`) & Universal Phone Responsiveness (`320px–430px`)** — Instant switching between English, French, and Arabic (with native RTL layout, `Bouazzi Maghribi` & `Readex Pro` typography) plus *Obsidian Nacre* (dark couture) and *Cloud Silk* (daylight ivory) themes, engineered with zero horizontal overflow across all phone displays.
+- **Multilingual (`EN` / `FR` / `ES` / `AR`) & Universal Phone Responsiveness (`320px–430px`)** — Instant switching between English, French, Spanish, and Arabic (with native RTL layout, `Bouazzi Maghribi` & `Readex Pro` typography) plus *Obsidian Nacre* (dark couture) and *Cloud Silk* (daylight ivory) themes, engineered with zero horizontal overflow across all phone displays.
 
 ---
 

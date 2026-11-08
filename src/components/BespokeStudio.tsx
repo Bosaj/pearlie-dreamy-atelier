@@ -32,6 +32,7 @@ const SILHOUETTES: SilhouetteOption[] = [
     name: {
       en: 'Crystal Kiss-Lock Couture Clutch',
       fr: 'Sac Cristal Fermoir Kiss-Lock Couture',
+      es: 'Bolso de Cristal con Cierre Kiss-Lock Couture',
       ar: 'حقيبة الكريستال بقفل كلاسيكي ذهبي',
     },
     basePriceMAD: 450,
@@ -41,6 +42,7 @@ const SILHOUETTES: SilhouetteOption[] = [
     desc: {
       en: 'Hand-knotted faceted crystal evening clutch with sculpted handle & gold chain.',
       fr: 'Pochette de soirée en cristal facetté tissée main avec poignée sculptée et chaîne.',
+      es: 'Clutch de noche de cristal facetado tejido a mano con asa esculpida y cadena dorada.',
       ar: 'حقيبة سهرة منسوجة يدوياً من الكريستال اللامع مع مقبض منحوت وسلسلة كتف.',
     },
   },
@@ -49,6 +51,7 @@ const SILHOUETTES: SilhouetteOption[] = [
     name: {
       en: 'Celestine Pearl Handbag',
       fr: 'Sac à Main Perlé Célestine',
+      es: 'Bolso de Perlas Célestine',
       ar: 'حقيبة سيليستين اللؤلؤية الفاخرة',
     },
     basePriceMAD: 410,
@@ -58,6 +61,7 @@ const SILHOUETTES: SilhouetteOption[] = [
     desc: {
       en: 'Lustrous mother-of-pearl weave with optional crystal ribbon inlay or lattice work.',
       fr: 'Tissage nacré lumineux avec ruban de cristal incrusté ou résille losangée.',
+      es: 'Tejido nacarado luminoso con cinta de cristal incrustada o celosía de diamante.',
       ar: 'حياكة لؤلؤية متقنة مع شريط كريستالي أو تصميم شبكي ماسي.',
     },
   },
@@ -66,6 +70,7 @@ const SILHOUETTES: SilhouetteOption[] = [
     name: {
       en: '3D Alphabet Initial Keychain (A–Z)',
       fr: 'Porte-Clés Initiale Alphabet 3D (A–Z)',
+      es: 'Llavero Inicial Alfabeto 3D (A–Z)',
       ar: 'ميدالية الحرف الأبجدي ثلاثية الأبعاد (A–Z)',
     },
     basePriceMAD: 65,
@@ -75,6 +80,7 @@ const SILHOUETTES: SilhouetteOption[] = [
     desc: {
       en: 'Your custom initial woven in double-layer pearls and crystal trim.',
       fr: 'Votre lettre personnalisée tissée en double couche de perles et cristaux.',
+      es: 'Tu letra personalizada tejida en doble capa de perlas y ribete de cristal.',
       ar: 'حرفكِ الخاص منسوج بطبقتين من اللؤلؤ الأبيض وتطعيمات الكريستال.',
     },
   },
@@ -83,6 +89,7 @@ const SILHOUETTES: SilhouetteOption[] = [
     name: {
       en: 'Coquette Pearl & Crystal Bow Charm',
       fr: 'Bijou de Sac Nœud Coquette Perles & Cristal',
+      es: 'Charm Lazo Coquette de Perlas y Cristal',
       ar: 'تعليقة فيونكة اللؤلؤ والكريستال',
     },
     basePriceMAD: 50,
@@ -92,6 +99,7 @@ const SILHOUETTES: SilhouetteOption[] = [
     desc: {
       en: 'Graduated nacre pearls & faceted crystal loops for your bag or keys.',
       fr: 'Perles graduées et boucles de cristal facetté pour votre sac ou vos clés.',
+      es: 'Perlas graduadas y lazadas de cristal facetado para tu bolso o tus llaves.',
       ar: 'فيونكة أنيقة من اللؤلؤ المتدرج والكريستال لمفاتيحك أو حقيبتك.',
     },
   },
@@ -100,6 +108,7 @@ const SILHOUETTES: SilhouetteOption[] = [
     name: {
       en: 'Nacre Pearl AirPods & Mini Case',
       fr: 'Étui AirPods & Mini Pochette Perlée',
+      es: 'Estuche para AirPods y Mini Bolsito de Perlas',
       ar: 'حافظة سماعات وميني باوتش باللؤلؤ',
     },
     basePriceMAD: 140,
@@ -109,6 +118,7 @@ const SILHOUETTES: SilhouetteOption[] = [
     desc: {
       en: 'Custom snap-closure pearl mini pouch with beaded wristlet strap.',
       fr: 'Mini écrin en perles avec bouton-pression et dragonne perlée.',
+      es: 'Mini estuche de perlas con cierre a presión y muñequera de perlas.',
       ar: 'حافظة لؤلؤية صغيرة بزر إغلاق معدني وسوار معصم من اللؤلؤ.',
     },
   },
@@ -125,9 +135,9 @@ const PALETTE_SWATCHES = [
 ];
 
 const HARDWARE_OPTIONS = [
-  { id: 'gold-24k', label: { en: '24K-Tone Gold Clasp & Chain', fr: 'Fermoir & Chaîne Doré Or', ar: 'إطار وسلسلة باللون الذهبي' } },
-  { id: 'silver-luxe', label: { en: 'Polished Silver Hardware', fr: 'Finition Argent Poli', ar: 'إطار وسلسلة باللون الفضي' } },
-  { id: 'lavender-satin', label: { en: 'Pearl + Lavender Satin Ribbon', fr: 'Perles + Ruban Satin Lavande', ar: 'لؤلؤ مع شريط ساتان لافندر' } },
+  { id: 'gold-24k', label: { en: '24K-Tone Gold Clasp & Chain', fr: 'Fermoir & Chaîne Doré Or', es: 'Cierre y Cadena Dorados', ar: 'إطار وسلسلة باللون الذهبي' } },
+  { id: 'silver-luxe', label: { en: 'Polished Silver Hardware', fr: 'Finition Argent Poli', es: 'Herrajes de Plata Pulida', ar: 'إطار وسلسلة باللون الفضي' } },
+  { id: 'lavender-satin', label: { en: 'Pearl + Lavender Satin Ribbon', fr: 'Perles + Ruban Satin Lavande', es: 'Perlas + Cinta de Satén Lavanda', ar: 'لؤلؤ مع شريط ساتان لافندر' } },
 ];
 
 const LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
@@ -189,7 +199,7 @@ export const BespokeStudio: React.FC<BespokeStudioProps> = ({ lang, lightMode, o
               ? 'استوديو التصميم المخصص · صممي قطعتكِ الفريدة'
               : lang === 'fr'
               ? 'Atelier Sur-Mesure · Créez Votre Pièce Unique'
-              : 'Bespoke Holographic Atelier · Co-Create With Ihsane'}
+              : lang === 'es' ? 'Atelier a Medida · Crea Tu Pieza Única' : 'Bespoke Holographic Atelier · Co-Create With Ihsane'}
           </span>
         </div>
 
@@ -199,6 +209,10 @@ export const BespokeStudio: React.FC<BespokeStudioProps> = ({ lang, lightMode, o
           ) : lang === 'fr' ? (
             <>
               Façonnez votre <span className="italic font-normal text-[#D8B4E2]">création sur-mesure</span> perle par perle.
+            </>
+          ) : lang === 'es' ? (
+            <>
+              Da forma a tu <span className="italic font-normal text-[#D8B4E2]">creación a medida</span> perla a perla.
             </>
           ) : (
             <>
@@ -211,7 +225,7 @@ export const BespokeStudio: React.FC<BespokeStudioProps> = ({ lang, lightMode, o
             ? 'اختاري شكل الحقيبة أو الميدالية، لون اللؤلؤ والكريستال، الحرف الأبجدي الخاص بكِ، ومدينة التوصيل في المغرب، ثم أرسلي طلبكِ مباشرة عبر واتساب.'
             : lang === 'fr'
             ? 'Choisissez votre silhouette, votre palette de perles ou cristaux, votre initiale A–Z et votre coffret cadeau lavande. Livraison partout au Maroc 🚚🇲🇦.'
-            : 'Every Pearlie creation is hand-knotted to order. Select your silhouette, crystal refraction palette, custom A–Z monogram charm, and lavender gift box note.'}
+            : lang === 'es' ? 'Elige tu silueta, tu paleta de perlas o cristales, tu inicial A–Z y tu caja de regalo lavanda. Envíos a todo Marruecos 🚚🇲🇦.' : 'Every Pearlie creation is hand-knotted to order. Select your silhouette, crystal refraction palette, custom A–Z monogram charm, and lavender gift box note.'}
         </p>
       </div>
 
@@ -238,10 +252,10 @@ export const BespokeStudio: React.FC<BespokeStudioProps> = ({ lang, lightMode, o
                 <label className="text-xs uppercase tracking-[0.2em] font-mono-tech opacity-70 flex items-center gap-2">
                   <span>01</span>
                   <span>·</span>
-                  <span>{lang === 'ar' ? 'اختاري التصميم' : lang === 'fr' ? 'Silhouette' : 'Select Silhouette'}</span>
+                  <span>{lang === 'ar' ? 'اختاري التصميم' : lang === 'fr' ? 'Silhouette' : lang === 'es' ? 'Silueta' : 'Select Silhouette'}</span>
                 </label>
                 <span className="text-xs font-mono-tech text-[#D8B4E2]">
-                  {activeSilhouette.beadCount} {lang === 'fr' ? 'perles' : 'beads'} · ~{activeSilhouette.craftHours}h
+                  {activeSilhouette.beadCount} {lang === 'fr' ? 'perles' : lang === 'es' ? 'perlas' : 'beads'} · ~{activeSilhouette.craftHours}h
                 </span>
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
@@ -281,7 +295,7 @@ export const BespokeStudio: React.FC<BespokeStudioProps> = ({ lang, lightMode, o
             <div>
               <label className="text-xs uppercase tracking-[0.2em] font-mono-tech opacity-70 flex items-center gap-2 mb-3">
                 <Palette className="w-3.5 h-3.5 text-[#D8B4E2]" strokeWidth={1.5} />
-                <span>02 · {lang === 'ar' ? 'لون اللؤلؤ والكريستال' : lang === 'fr' ? 'Palette de Perles & Cristaux' : 'Pearl & Crystal Palette'}</span>
+                <span>02 · {lang === 'ar' ? 'لون اللؤلؤ والكريستال' : lang === 'fr' ? 'Palette de Perles & Cristaux' : lang === 'es' ? 'Paleta de Perlas y Cristales' : 'Pearl & Crystal Palette'}</span>
               </label>
               <div className="flex flex-wrap gap-2.5">
                 {PALETTE_SWATCHES.map((swatch) => {
@@ -324,7 +338,7 @@ export const BespokeStudio: React.FC<BespokeStudioProps> = ({ lang, lightMode, o
                     ? 'الحرف المخصص (ميدالية الحروف أو تعليقة الحقيبة)'
                     : lang === 'fr'
                     ? 'Initiale Personnalisée (Porte-clés ou Bijou de Sac)'
-                    : 'Custom Initial Monogram (A–Z Keychain or Bag Tag)'}
+                    : lang === 'es' ? 'Inicial Personalizada (Llavero o Charm de Bolso)' : 'Custom Initial Monogram (A–Z Keychain or Bag Tag)'}
                 </span>
               </label>
               <div className="flex flex-wrap gap-1.5">
@@ -357,7 +371,7 @@ export const BespokeStudio: React.FC<BespokeStudioProps> = ({ lang, lightMode, o
                   htmlFor="bespoke-hardware-select"
                   className="text-xs uppercase tracking-[0.2em] font-mono-tech opacity-70 block mb-2"
                 >
-                  04 · {lang === 'ar' ? 'الإطار والسلسلة' : lang === 'fr' ? 'Finition Métal & Ruban' : 'Hardware & Ribbon'}
+                  04 · {lang === 'ar' ? 'الإطار والسلسلة' : lang === 'fr' ? 'Finition Métal & Ruban' : lang === 'es' ? 'Herrajes y Cinta' : 'Hardware & Ribbon'}
                 </label>
                 <select
                   id="bespoke-hardware-select"
@@ -384,7 +398,7 @@ export const BespokeStudio: React.FC<BespokeStudioProps> = ({ lang, lightMode, o
                   className="text-xs uppercase tracking-[0.2em] font-mono-tech opacity-70 flex items-center gap-1.5 mb-2"
                 >
                   <MapPin className="w-3.5 h-3.5 text-[#D8B4E2]" />
-                  <span>05 · {lang === 'ar' ? 'مدينة التوصيل (المغرب)' : lang === 'fr' ? 'Ville de Livraison (Maroc)' : 'Delivery City (Morocco)'}</span>
+                  <span>05 · {lang === 'ar' ? 'مدينة التوصيل (المغرب)' : lang === 'fr' ? 'Ville de Livraison (Maroc)' : lang === 'es' ? 'Ciudad de Entrega (Marruecos)' : 'Delivery City (Morocco)'}</span>
                 </label>
                 <select
                   id="bespoke-city-select"
@@ -413,7 +427,7 @@ export const BespokeStudio: React.FC<BespokeStudioProps> = ({ lang, lightMode, o
                 className="text-xs uppercase tracking-[0.2em] font-mono-tech opacity-70 flex items-center gap-1.5 mb-2"
               >
                 <Gift className="w-3.5 h-3.5 text-[#D8B4E2]" />
-                <span>06 · {lang === 'ar' ? 'رسالة بطاقة الهدية' : lang === 'fr' ? 'Message Carte Cadeau Pearlie' : 'Signature Gift Card Message'}</span>
+                <span>06 · {lang === 'ar' ? 'رسالة بطاقة الهدية' : lang === 'fr' ? 'Message Carte Cadeau Pearlie' : lang === 'es' ? 'Mensaje de la Tarjeta de Regalo Pearlie' : 'Signature Gift Card Message'}</span>
               </label>
               <input
                 id="bespoke-gift-note-input"
@@ -558,7 +572,7 @@ export const BespokeStudio: React.FC<BespokeStudioProps> = ({ lang, lightMode, o
                           ? 'تمت الإضافة إلى حقيبة التسوق!'
                           : lang === 'fr'
                           ? 'Ajouté à votre Panier Pearlie !'
-                          : 'Added to Your Pearlie Bag!'}
+                          : lang === 'es' ? '¡Añadido a tu Bolsa Pearlie!' : 'Added to Your Pearlie Bag!'}
                       </span>
                     </>
                   ) : (
@@ -569,7 +583,7 @@ export const BespokeStudio: React.FC<BespokeStudioProps> = ({ lang, lightMode, o
                           ? 'أضيفي التصميم المخصص للسلة'
                           : lang === 'fr'
                           ? 'Ajouter cette Création au Panier'
-                          : 'Add Custom Creation to Bag'}
+                          : lang === 'es' ? 'Añadir esta Creación a la Bolsa' : 'Add Custom Creation to Bag'}
                       </span>
                     </>
                   )}
@@ -603,7 +617,7 @@ export const BespokeStudio: React.FC<BespokeStudioProps> = ({ lang, lightMode, o
                       ? 'اطلبي التصميم مباشرة عبر واتساب 📩'
                       : lang === 'fr'
                       ? 'Commander directement sur WhatsApp 📩'
-                      : 'Send Custom Spec via WhatsApp Concierge 📩'}
+                      : lang === 'es' ? 'Pedir directamente por WhatsApp 💬' : 'Send Custom Spec via WhatsApp Concierge 📩'}
                   </span>
                 </span>
                 <span className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center transition-transform duration-200 ease-out-strong group-hover:translate-x-0.5">

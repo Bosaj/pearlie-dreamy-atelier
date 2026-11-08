@@ -14,6 +14,7 @@ interface PoemBayt {
   ajuz: string; // Second hemistich (عجز البيت)
   en: string;
   fr: string;
+  es: string;
 }
 
 interface QasidaItem {
@@ -21,10 +22,12 @@ interface QasidaItem {
   titleAr: string;
   titleEn: string;
   titleFr: string;
+  titleEs: string;
   bahrAr: string; // Poetic meter
   dedicationAr: string;
   dedicationEn: string;
   dedicationFr: string;
+  dedicationEs: string;
   accent: string;
   abyat: PoemBayt[];
 }
@@ -35,10 +38,12 @@ const QASIDAS: QasidaItem[] = [
     titleAr: 'دُرُّ الصِّنَاعَةِ وَإِحْسَانُ اليَدِ',
     titleEn: 'The Pearl of Craft & The Grace of Ihsane’s Hand',
     titleFr: 'La Perle de l’Art & La Grâce de la Main d’Ihsane',
+    titleEs: 'La Perla del Oficio y la Gracia de la Mano de Ihsane',
     bahrAr: 'البَحْرُ الكَامِلُ · إِهْدَاءٌ خَاصٌّ لِإِحْسَان (@ihsane__ft)',
     dedicationAr: 'فِي وَصْفِ أَنَامِلِ «إِحْسَان» وَهِيَ تَنْسِجُ حَقَائِبَ اللُّؤْلُؤِ وَالبَلَّوْرِ بِصَبْرٍ وَإِتْقَانٍ',
     dedicationEn: 'Dedicated to founder & artisan Ihsane (@ihsane__ft) — weaving luminous pearls & crystals by hand.',
     dedicationFr: 'Dédié à la fondatrice et artisane Ihsane (@ihsane__ft) — tissant perles et cristaux à la main.',
+    dedicationEs: 'Dedicado a la fundadora y artesana Ihsane (@ihsane__ft): tejiendo a mano perlas y cristales luminosos.',
     accent: '#D8B4E2',
     abyat: [
       {
@@ -46,24 +51,28 @@ const QASIDAS: QasidaItem[] = [
         ajuz: 'فَغَدَا البَرِيقُ عَلَى الحَرِيرِ مَعَانِيَا',
         en: 'Her fingertips strung beauty into luminous pearls, turning shimmer upon silk into poetry.',
         fr: 'Ses doigts ont tressé la beauté en perles lumineuses, faisant briller la soie comme un poème.',
+        es: 'Sus dedos ensartaron la belleza en perlas luminosas, convirtiendo el destello sobre la seda en poesía.',
       },
       {
         sadr: 'فِي كُلِّ حَبَّةِ لُؤْلُؤٍ أُنْشُودَةٌ',
         ajuz: 'تَرْوِي هُدُوءَ الرُّوحِ حِينَ تُنَاجِيَا',
         en: 'Within every single pearl lives a gentle hymn that whispers serenity to the soul.',
         fr: 'Dans chaque perle vit une mélodie douce qui murmure la sérénité à l’âme.',
+        es: 'Dentro de cada perla vive un himno suave que susurra serenidad al alma.',
       },
       {
         sadr: 'حُسْنٌ تَفَرَّدَ فِي السُّكُونِ جَلَالُهُ',
         ajuz: 'لَا يَطْلُبُ الضَّوْضَاءَ كَيْ يَتَسَامِيَا',
         en: 'A majesty of beauty that stands apart in quietness — needing no noise to be exalted.',
         fr: 'Une beauté souveraine dans le calme — qui n’a nul besoin de bruit pour resplendir.',
+        es: 'Una majestad de belleza que se distingue en la quietud, sin necesitar ruido para ser exaltada.',
       },
       {
         sadr: 'إِحْسَانُ صَنْعَتِهَا يُشِعُّ نَضَارَةً',
         ajuz: 'كَالبَدْرِ يَنْسِجُ فِي الظَّلَامِ دَرَارِيَا',
         en: 'The Ihsane (perfection) of her craft radiates grace, like the full moon weaving stars across the night.',
         fr: 'L’Ihsane (l’excellence) de son art rayonne, telle la pleine lune tissant des étoiles dans la nuit.',
+        es: 'El Ihsane (la perfección) de su oficio irradia gracia, como la luna llena tejiendo estrellas en la noche.',
       },
     ],
   },
@@ -72,10 +81,12 @@ const QASIDAS: QasidaItem[] = [
     titleAr: 'سِحْرُ الجُمَانِ وَالدُّرِّ المَكْنُونِ',
     titleEn: 'Enchantment of Hidden Pearls & Crystal Nacre',
     titleFr: 'L’Enchantement des Perles Cachées & du Cristal',
+    titleEs: 'El Encanto de las Perlas Ocultas y el Nácar de Cristal',
     bahrAr: 'البَحْرُ البَسِيطُ · دَارُ بِيرْلي (@_pearlie.dreamy)',
     dedicationAr: 'فِي بَهَاءِ الدُّرِّ الأَبْيَضِ وَيَاقُوتِ «بِيرْلي» المَنْظُومِ بِالذَّهَبِ',
     dedicationEn: 'In praise of Pearlie Handcrafted’s mother-of-pearl totes and ruby/onyx kiss-lock clutches.',
     dedicationFr: 'Éloge des sacs en nacre et des pochettes cristal cousues d’or de Pearlie Handcrafted.',
+    dedicationEs: 'En alabanza de los totes de nácar y los clutches kiss-lock de rubí y ónix de Pearlie Handcrafted.',
     accent: '#F3E5AB',
     abyat: [
       {
@@ -83,24 +94,28 @@ const QASIDAS: QasidaItem[] = [
         ajuz: 'صَفَاءُ النَّدَى فِي رِقَّةِ اليَاسَمِينِ',
         en: 'Treasured white pearls fashioned from the purity of morning dew and the delicacy of jasmine.',
         fr: 'Blanches perles précieuses façonnées dans la pureté de la rosée et la douceur du jasmin.',
+        es: 'Perlas blancas preciadas, moldeadas con la pureza del rocío matinal y la delicadeza del jazmín.',
       },
       {
         sadr: 'يَلُوحُ عَلَى الكَفَّيْنِ نُورًا مُنَضَّدًا',
         ajuz: 'كَعِقْدِ الثُّرَيَّا فِي جَبِينِ السِّنِينِ',
         en: 'Shining upon the palms intiered light, like the Pleiades crowning the brow of time.',
         fr: 'Brillant entre les mains telle une constellation, comme les Pléiades au front du temps.',
+        es: 'Brillando en las palmas como una constelación, como las Pléyades coronando la frente del tiempo.',
       },
       {
         sadr: 'وَفِي حُلْكَةِ اليَاقُوتِ وَاللَّيْلِ بَهْجَةٌ',
         ajuz: 'تُضِيءُ سَرَايَا القَلْبِ بَعْدَ الحَنِينِ',
         en: 'And in deep ruby and midnight onyx dwells a splendor that illuminates the chambers of the heart.',
         fr: 'Et dans l’éclat du rubis et de l’onyx nocturne réside une lumière qui enchante le cœur.',
+        es: 'Y en el rubí profundo y el ónix de medianoche habita un esplendor que ilumina las cámaras del corazón.',
       },
       {
         sadr: 'فَيَا حَامِلًا مِنْ صَنْعَةِ الحُبِّ تُحْفَةً',
         ajuz: 'تَفَرَّدْتَ بِالإِبْدَاعِ فَوْقَ الظُّنُونِ',
         en: 'O bearer of a masterpiece woven with love — you carry a rarity beyond imagination.',
         fr: 'Ô porteuse d’un chef-d’œuvre tissé d’amour — tu portes une création unique au monde.',
+        es: 'Oh portadora de una obra maestra tejida con amor: llevas una rareza más allá de la imaginación.',
       },
     ],
   },
@@ -109,10 +124,12 @@ const QASIDAS: QasidaItem[] = [
     titleAr: 'رُكْنُ السَّكِينَةِ وَالغَمَامِ',
     titleEn: 'Sanctuary of Serenity & Soft Clouds',
     titleFr: 'Le Sanctuaire de la Sérénité & des Nuages',
+    titleEs: 'El Santuario de la Serenidad y las Nubes Suaves',
     bahrAr: 'البَحْرُ الوَافِرُ · رُكْنُ الهُدُوءِ (@__little.calmcorner)',
     dedicationAr: 'إِلَى القُلُوبِ الهَادِئَةِ الَّتِي تَقْرَأُ الحُلْمَ وَتَصْنَعُهُ بِهُدُوءٍ وَيَقِينٍ',
     dedicationEn: 'Inspired by Little Calm Corner ☁️ — “Read it. Dream it. Do it!”',
     dedicationFr: 'Inspiré par Little Calm Corner ☁️ — « Lis-le. Rêve-le. Fais-le ! »',
+    dedicationEs: 'Inspirado en Little Calm Corner: « Read it. Dream it. Do it! »',
     accent: '#C9F0E4',
     abyat: [
       {
@@ -120,24 +137,28 @@ const QASIDAS: QasidaItem[] = [
         ajuz: 'وَسَلْوَى القَلْبِ فِي زَمَنِ الزِّحَامِ',
         en: 'Here lies the corner of stillness and soft clouds — a solace for the heart in a crowded world.',
         fr: 'Voici le coin de quiétude et de nuages doux — un refuge pour le cœur loin du tumulte.',
+        es: 'Aquí yace el rincón de la quietud y las nubes suaves: un consuelo para el corazón en un mundo abarrotado.',
       },
       {
         sadr: 'تَنَفَّسْ فِي الصَّبَاحِ نَسِيمَ لُطْفٍ',
         ajuz: 'وَعِشْ بِالرِّفْقِ فِي كَنَفِ السَّلَامِ',
         en: 'Breathe in the morning breeze of kindness, and walk gently within the sanctuary of peace.',
         fr: 'Respire au matin la brise de douceur, et vis avec bienveillance dans la paix.',
+        es: 'Respira la brisa matinal de la bondad y camina con suavidad dentro del santuario de la paz.',
       },
       {
         sadr: 'قَرَأْتِ الحُلْمَ ثُمَّ بَنَيْتِ مَجْدًا',
         ajuz: 'بِعَزْمِ العِلْمِ وَالفَنِّ الهُمَامِ',
         en: 'You read the dream, envisioned it, and built it with the resolve of engineering and noble art.',
         fr: 'Tu as lu le rêve, tu l’as imaginé, et tu l’as bâti par la science et l’art.',
+        es: 'Leíste el sueño, lo imaginaste y lo construiste con la determinación de la ingeniería y el arte noble.',
       },
       {
         sadr: 'فَلَا تَعْجَلْ عَلَى الأَيَّامِ وَاصْبِرْ',
         ajuz: 'فَإِنَّ الفَجْرَ يَأْتِي بِابْتِسَامِ',
         en: 'Do not rush the unfolding of days — be patient, for dawn always arrives with a gentle smile.',
         fr: 'Ne presse pas le cours des jours — sois patiente, car l’aube vient toujours avec un sourire.',
+        es: 'No apresures el despliegue de los días: ten paciencia, pues el alba siempre llega con una suave sonrisa.',
       },
     ],
   },
@@ -146,10 +167,12 @@ const QASIDAS: QasidaItem[] = [
     titleAr: 'مُوَشَّحُ تَاجِ الأَنَاقَةِ المَغْرِبِيَّةِ',
     titleEn: 'Andalusian-Moroccan Muwashshah of Crowned Elegance',
     titleFr: 'Mouwachah Maroco-Andalou de la Couronne d’Élégance',
+    titleEs: 'Moaxaja Hispano-Marroquí de la Elegancia Coronada',
     bahrAr: 'البَحْرُ الخَفِيفُ · التُّرَاثُ المَغْرِبِيُّ الأَصِيلُ 🇲🇦',
     dedicationAr: 'فِي أَصَالَةِ الصَّنْعَةِ المَغْرِبِيَّةِ مِنْ وَجْدَةَ وَبَرْكَانَ إِلَى كُلِّ رُبُوعِ المَغْرِبِ',
     dedicationEn: 'Celebrating Moroccan artisanal heritage across every city of the Kingdom.',
     dedicationFr: 'Célébrant le savoir-faire artisanal marocain à travers toutes les villes du Royaume.',
+    dedicationEs: 'Celebrando el patrimonio artesanal marroquí en cada ciudad del Reino.',
     accent: '#F9D5E5',
     abyat: [
       {
@@ -157,18 +180,21 @@ const QASIDAS: QasidaItem[] = [
         ajuz: 'وَبَيَاضَ الدُّرِّ فِي العِقْدِ النَّظِيمْ',
         en: 'O radiance of crystal in the velvet night, and pure white pearl in the symmetrically knotted strand!',
         fr: 'Ô éclat du cristal dans la nuit de velours, et blancheur de la perle au collier parfait !',
+        es: 'Oh resplandor del cristal en la noche de terciopelo y perla blanca en el collar anudado con simetría.',
       },
       {
         sadr: 'مِنْ رُبَى المَغْرِبِ صِيغَتْ تُحَفًا',
         ajuz: 'تَسْحَرُ الأَبْصَارَ بِالطَّبْعِ الكَرِيمْ',
         en: 'From the hills of Morocco fashioned as treasures that enchant every eye with noble grace.',
         fr: 'Depuis les terres du Maroc façonnées en joyaux qui charment le regard par leur noblesse.',
+        es: 'Desde las colinas de Marruecos, moldeados como tesoros que encantan cada mirada con noble gracia.',
       },
       {
         sadr: 'كُلُّ عِقْدٍ فِيهِ مِنْ رُوحِ الصَّفَا',
         ajuz: 'نَفْحَةٌ تُحْيِي الهَوَى العَذْبَ القَدِيمْ',
         en: 'Every woven clasp carries a breath of serenity that revives timeless, pure affection.',
         fr: 'Chaque fermoir tressé porte un souffle de pureté qui ravive la beauté éternelle.',
+        es: 'Cada cierre tejido lleva un aliento de serenidad que reaviva el afecto puro y atemporal.',
       },
     ],
   },
@@ -230,7 +256,7 @@ export const MaghribiPoetryDiwan: React.FC<MaghribiPoetryDiwanProps> = ({ lang, 
               ? 'دِيوَانُ الدُّرِّ وَاللُّؤْلُؤِ · بِالخَطِّ المَغْرِبِيِّ الأَصِيلِ'
               : lang === 'fr'
               ? 'DIWAN AL-DURR · POÉSIE ARABE EN CALLIGRAPHIE MAGHRIBI'
-              : 'DIWAN AL-DURR · CLASSICAL ARABIC POETRY IN MAGHRIBI SCRIPT'}
+              : lang === 'es' ? 'DIWAN AL-DURR · POESÍA ÁRABE CLÁSICA EN CALIGRAFÍA MAGHRIBI' : 'DIWAN AL-DURR · CLASSICAL ARABIC POETRY IN MAGHRIBI SCRIPT'}
           </span>
         </div>
 
@@ -247,7 +273,7 @@ export const MaghribiPoetryDiwan: React.FC<MaghribiPoetryDiwanProps> = ({ lang, 
             ? 'قصائدُ عربيةٌ فصيحةٌ نُظمت على البحور الشعرية الكلاسيكية (الكامل، البسيط، الوافر، والموشح المغربي) في وصف لآلئ «بِيرْلي» وسكينة «ركن الهدوء»، مرسومةً بالخط المغربي المبسوط الأصيل (Bouazzi Maghribi).'
             : lang === 'fr'
             ? 'Odes arabes classiques composées sur les mètres poétiques traditionnels (Al-Kamil, Al-Basit, Al-Wafir et Mouwachah marocain) célébrant les perles de Pearlie et la quiétude de Little Calm Corner, tracées dans l’authentique calligraphie marocaine Bouazzi Maghribi.'
-            : 'Classical Arabic odes composed in traditional poetic meters (Al-Kamil, Al-Basit, Al-Wafir & Moroccan Muwashshah) celebrating Pearlie’s hand-knotted pearls and Little Calm Corner’s serenity — rendered in authentic Moroccan Bouazzi Maghribi calligraphy.'}
+            : lang === 'es' ? 'Odas árabes clásicas compuestas en los metros poéticos tradicionales (Al-Kamil, Al-Basit, Al-Wafir y moaxaja marroquí) que celebran las perlas anudadas a mano de Pearlie y la serenidad de Little Calm Corner, trazadas en la auténtica caligrafía marroquí Bouazzi Maghribi.' : 'Classical Arabic odes composed in traditional poetic meters (Al-Kamil, Al-Basit, Al-Wafir & Moroccan Muwashshah) celebrating Pearlie’s hand-knotted pearls and Little Calm Corner’s serenity — rendered in authentic Moroccan Bouazzi Maghribi calligraphy.'}
         </p>
       </div>
 
@@ -358,7 +384,11 @@ export const MaghribiPoetryDiwan: React.FC<MaghribiPoetryDiwanProps> = ({ lang, 
                     ? 'إخفاء الترجمة'
                     : 'إظهار الترجمة (EN)'
                   : showTranslation
-                  ? 'Hide Translation'
+                  ? lang === 'es'
+                    ? 'Ocultar Traducción'
+                    : 'Hide Translation'
+                  : lang === 'es'
+                  ? 'Mostrar Traducción'
                   : 'Show Translation'}
               </button>
             </div>
@@ -382,6 +412,8 @@ export const MaghribiPoetryDiwan: React.FC<MaghribiPoetryDiwanProps> = ({ lang, 
                 ? currentPoem.dedicationAr
                 : lang === 'fr'
                 ? currentPoem.dedicationFr
+                : lang === 'es'
+                ? currentPoem.dedicationEs
                 : currentPoem.dedicationEn}
             </p>
           </div>
@@ -431,7 +463,7 @@ export const MaghribiPoetryDiwan: React.FC<MaghribiPoetryDiwanProps> = ({ lang, 
                     dir="ltr"
                     className="mt-3 pt-3 border-t border-white/10 text-center font-display italic text-xs sm:text-sm md:text-base opacity-75"
                   >
-                    “{lang === 'fr' ? bayt.fr : bayt.en}”
+                    “{lang === 'fr' ? bayt.fr : lang === 'es' ? bayt.es : bayt.en}”
                   </p>
                 )}
               </div>

@@ -109,6 +109,20 @@ export const FounderSurpriseModal: React.FC<FounderSurpriseModalProps> = ({ isOp
                   « Read it. Dream it. Do it! كل لؤلؤة تنسجينها بحب تروي قصة نجاحكِ وتألقكِ. »
                 </p>
               </>
+            ) : lang === 'es' ? (
+              <>
+                <p className="font-display text-xl italic text-[#F9D5E5]">
+                  Para Ihsane (@ihsane__ft) — Una sorpresa creada especialmente para ti 🤍🔮
+                </p>
+                <p>
+                  Este sitio web futurista fue concebido como un estuche digital a medida para celebrar tu talento, tu paciencia y tu visión. Entre tu último año de estudios y las horas dedicadas a tejer cada perla de{' '}
+                  <strong>Pearlie Handcrafted (@_pearlie.dreamy)</strong>, mientras compartes la dulzura de{' '}
+                  <strong>Little Calm Corner (@__little.calmcorner)</strong>, creas una belleza poco común que no necesita hacer ruido para ser inolvidable.
+                </p>
+                <p className="italic text-[#D8B4E2]">
+                  « Read it. Dream it. Do it! Que tu maison Pearlie brille por todo Marruecos y más allá. »
+                </p>
+              </>
             ) : lang === 'fr' ? (
               <>
                 <p className="font-display text-xl italic text-[#F9D5E5]">

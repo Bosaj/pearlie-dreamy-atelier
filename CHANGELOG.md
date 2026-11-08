@@ -5,6 +5,13 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and thi
 
 ## [Unreleased]
 
+## [1.4.0] — 2026-11-08
+### Added
+- **Spanish (`ES`) language** alongside English, French, and Arabic:
+  - New `ES` button in the language switcher (fits `340px` phones with zero horizontal overflow).
+  - Spanish copy for the hero, navigation, boutique filters/search, all 16 product titles, subtitles, descriptions and materials, the 7 story highlights, the Bespoke 3D Studio (silhouettes, hardware, form labels, CTAs), Little Calm Corner (5 posts, affirmations, breathing pacer), the Founder Surprise letter, the Diwan poem translations/dedications, and the footer.
+  - `tests/atelier.test.mjs` now asserts `Language = 'en' | 'fr' | 'es' | 'ar'` and that every product and Calm Corner post defines Spanish text.
+
 ## [1.3.0] — 2026-11-08
 ### Added
 - **Diwan al-Durr (`ديوان الدُّرّ واللؤلؤ` — `src/components/MaghribiPoetryDiwan.tsx`)**:

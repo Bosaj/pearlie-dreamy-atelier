@@ -32,9 +32,23 @@ test('All referenced ./images/* assets exist on disk and are non-empty', () => {
   }
 });
 
-test('Multilingual trilingual keys (en, fr, ar) are present across product titles', () => {
+test('Multilingual keys (en, fr, es, ar) are present across product titles', () => {
   const dataContent = fs.readFileSync(path.join(rootDir, 'src', 'data', 'atelierData.ts'), 'utf8');
-  assert.ok(dataContent.includes("export type Language = 'en' | 'fr' | 'ar';"));
+  assert.ok(dataContent.includes("export type Language = 'en' | 'fr' | 'es' | 'ar';"));
+
+  // Every product defines Spanish title, subtitle, description & materials (16 products)
+  const productSection = dataContent.slice(
+    dataContent.indexOf('export const PEARLIE_PRODUCTS'),
+    dataContent.indexOf('export const ALL_PEARLIE_POSTS')
+  );
+  const esLines = [...productSection.matchAll(/^\s{6}es:\s/gm)];
+  assert.equal(esLines.length, 16 * 4, 'Expected es title/subtitle/description/materials for each of 16 products');
+
+  // Calm Corner posts define Spanish title & soul note
+  const calmSection = dataContent.slice(dataContent.indexOf('export const CALM_CORNER_POSTS'), dataContent.indexOf('export const SOUL_AFFIRMATIONS'));
+  assert.equal([...calmSection.matchAll(/^\s{6}es:\s/gm)].length, 5 * 2, 'Expected es title & soulNote for 5 Calm Corner posts');
+
+  assert.ok(/SOUL_AFFIRMATIONS[\s\S]*\n  es: \[/.test(dataContent), 'Expected Spanish soul affirmations');
   assert.ok(dataContent.includes('https://wa.me/message/HYSIBOQVMTCAE1'));
   assert.ok(dataContent.includes('https://www.instagram.com/_pearlie.dreamy/'));
   assert.ok(dataContent.includes('https://www.instagram.com/__little.calmcorner/'));

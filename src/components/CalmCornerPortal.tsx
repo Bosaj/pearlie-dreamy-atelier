@@ -67,6 +67,11 @@ export const CalmCornerPortal: React.FC<CalmCornerPortalProps> = ({ lang, lightM
                 Little Calm Corner ☁️ —{' '}
                 <span className="italic font-normal text-[#F9D5E5]">petits rappels pour l’âme.</span>
               </>
+            ) : lang === 'es' ? (
+              <>
+                Little Calm Corner ☁️ —{' '}
+                <span className="italic font-normal text-[#F9D5E5]">pequeños recordatorios para tu alma.</span>
+              </>
             ) : (
               <>
                 Little Calm Corner ☁️ —{' '}
@@ -79,7 +84,7 @@ export const CalmCornerPortal: React.FC<CalmCornerPortalProps> = ({ lang, lightM
               ? '🤍 تذكيرات لطيفة لروحكِ · 🌸 حياة هادئة وعقل مطمئن. المساحة الإبداعية الثانية لإحسان حيث تلتقي الدراسة، التخطيط اليومي، وصناعة اللؤلؤ بالسلام الداخلي.'
               : lang === 'fr'
               ? '« 🤍 little reminders for your soul · 🌸 soft life & calm mind ». Le journal visuel d’Ihsane où ses études d’ingénieure, son carnet de vie et l’atelier Pearlie se rencontrent en douceur.'
-              : '“🤍 little reminders for your soul · 🌸 soft life & calm mind.” Explore Ihsane’s second creative universe where gentle motivation, study vlogs, and behind-the-scenes Pearlie craft live in harmony.'}
+              : lang === 'es' ? '« 🤍 pequeños recordatorios para tu alma | 🌸 vida suave y mente en calma ». El diario visual de Ihsane, donde sus estudios de ingeniería, su agenda de vida y el atelier Pearlie se encuentran con suavidad.' : '“🤍 little reminders for your soul · 🌸 soft life & calm mind.” Explore Ihsane’s second creative universe where gentle motivation, study vlogs, and behind-the-scenes Pearlie craft live in harmony.'}
           </p>
         </div>
 
@@ -146,7 +151,7 @@ export const CalmCornerPortal: React.FC<CalmCornerPortalProps> = ({ lang, lightM
                 className="press-feedback inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs bg-white/10 hover:bg-white/15 ring-1 ring-white/15"
               >
                 <RefreshCw className="w-3.5 h-3.5 text-[#F9D5E5]" />
-                <span>{lang === 'ar' ? 'رسالة أخرى' : lang === 'fr' ? 'Autre pensée douce' : 'Draw Another Reminder'}</span>
+                <span>{lang === 'ar' ? 'رسالة أخرى' : lang === 'fr' ? 'Autre pensée douce' : lang === 'es' ? 'Otro recordatorio' : 'Draw Another Reminder'}</span>
               </button>
             </div>
 
@@ -179,7 +184,7 @@ export const CalmCornerPortal: React.FC<CalmCornerPortalProps> = ({ lang, lightM
                       ? 'تمرين تنفس هادئ لتصفية الذهن (شهيق 4 ث · حبس 4 ث · زفير 6 ث)'
                       : lang === 'fr'
                       ? 'Pause respiratoire douce (Inspirer 4s · Retenir 4s · Expirer 6s)'
-                      : 'Interactive calm breathing pacer inspired by @__little.calmcorner'}
+                      : lang === 'es' ? 'Pausa de respiración suave (Inhala 4s · Sostén 4s · Exhala 6s)' : 'Interactive calm breathing pacer inspired by @__little.calmcorner'}
                   </p>
                 </div>
               </div>
@@ -194,12 +199,12 @@ export const CalmCornerPortal: React.FC<CalmCornerPortalProps> = ({ lang, lightM
                     ? 'إيقاف التنفس'
                     : lang === 'fr'
                     ? 'Pause'
-                    : 'Pause Breathing Orb'
+                    : lang === 'es' ? 'Pausar' : 'Pause Breathing Orb'
                   : lang === 'ar'
                   ? 'ابدئي التنفس الهادئ ☁️'
                   : lang === 'fr'
                   ? 'Respirer en Douceur ☁️'
-                  : 'Start Calm Breath ☁️'}
+                  : lang === 'es' ? 'Respirar en Calma 🌬️' : 'Start Calm Breath ☁️'}
               </button>
             </div>
           </div>
@@ -229,7 +234,7 @@ export const CalmCornerPortal: React.FC<CalmCornerPortalProps> = ({ lang, lightM
                   ? 'حيث تولد إبداعات برلي على مكتب الدراسة 💎📚'
                   : lang === 'fr'
                   ? 'Là où l’atelier Pearlie rencontre sa vie d’étudiante 💎📚'
-                  : 'Where Pearlie Craft Meets Her Study Desk 💎📚'}
+                  : lang === 'es' ? 'Donde el arte de Pearlie se encuentra con su escritorio de estudiante 🎀📚' : 'Where Pearlie Craft Meets Her Study Desk 💎📚'}
               </h3>
             </div>
 
