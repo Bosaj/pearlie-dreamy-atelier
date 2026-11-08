@@ -461,7 +461,7 @@ export const BespokeStudio: React.FC<BespokeStudioProps> = ({ lang, lightMode, o
 
             {/* Interactive Visual Preview Frame */}
             <div
-              key={`${silhouette}-${palette}-${initialLetter}`}
+              key={`${silhouette}-${paletteId}-${initialLetter}`}
               className="img-shimmer-frame animate-couture-reveal relative rounded-2xl overflow-hidden aspect-[4/3] mb-5 ring-1 ring-white/15 group"
             >
               <img

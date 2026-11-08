@@ -390,7 +390,7 @@ export const MaghribiPoetryDiwan: React.FC<MaghribiPoetryDiwanProps> = ({ lang, 
           <div dir="rtl" className="space-y-4 sm:space-y-6 max-w-4xl mx-auto">
             {currentPoem.abyat.map((bayt, idx) => (
               <div
-                key={`${activePoemId}-${fontStyle}-${idx}`}
+                key={`${activePoemIdx}-${fontStyle}-${idx}`}
                 style={{ animationDelay: `${idx * 90}ms` }}
                 className={`animate-couture-reveal hover-lift rounded-2xl p-4 sm:p-6 transition-all ${
                   lightMode
