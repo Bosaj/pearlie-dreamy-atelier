@@ -1,0 +1,42 @@
+name: Sync Documentation to Wiki
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'docs/wiki/**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync-wiki:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main repository
+        uses: actions/checkout@v4
+        with:
+          path: repo
+
+      - name: Sync docs/wiki to GitHub Wiki (if initialized)
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          WIKI_URL="https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.wiki.git"
+          if git ls-remote "$WIKI_URL" >/dev/null 2>&1; then
+            git clone "$WIKI_URL" wiki
+            cp -r repo/docs/wiki/* wiki/
+            cd wiki
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add .
+            if git diff --staged --quiet; then
+              echo "No wiki changes to commit."
+            else
+              git commit -m "docs: automated sync from main docs/wiki"
+              git push origin master || git push origin main
+            fi
+          else
+            echo "Wiki git repository not yet initialized via GitHub web UI (/wiki/_new); docs/wiki/ is available in the main repository."
+          fi
