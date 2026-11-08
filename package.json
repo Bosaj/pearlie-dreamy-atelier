@@ -1,16 +1,37 @@
 {
   "name": "pearlie-dreamy-atelier",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.2.0",
   "type": "module",
-  "description": "Pearlie Handcrafted (@_pearlie.dreamy) & Little Calm Corner (@__little.calmcorner) — Futuristic Haute Couture Pearl & Crystal Atelier by Ihsane (@ihsane__ft).",
-  "author": "Oussama Elhadji <oussousselhadji@gmail.com>",
+  "description": "Futuristic Pearlescent Haute-Couture Digital Maison & 3D Bespoke Atelier for Pearlie Handcrafted (@_pearlie.dreamy) × Little Calm Corner (@__little.calmcorner) — Co-owned by Oussama EL HADJI (@Bosaj) & Ihsane FATHI (@IhsaneFathi).",
+  "author": "Oussama EL HADJI <oussousselhadji@gmail.com> (https://github.com/Bosaj)",
+  "contributors": [
+    {
+      "name": "Oussama EL HADJI",
+      "email": "oussousselhadji@gmail.com",
+      "url": "https://github.com/Bosaj"
+    },
+    {
+      "name": "Ihsane FATHI",
+      "url": "https://github.com/IhsaneFathi"
+    }
+  ],
   "license": "MIT",
+  "homepage": "https://bosaj.github.io/pearlie-dreamy-atelier/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Bosaj/pearlie-dreamy-atelier.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Bosaj/pearlie-dreamy-atelier/issues"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "verify:assets": "node scripts/verify-assets.mjs",
+    "test": "node --test tests/atelier.test.mjs"
   },
   "dependencies": {
     "lucide-react": "^1.54.0",

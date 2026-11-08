@@ -1,0 +1,21 @@
+name: Feature or New Couture Piece Request
+description: Propose a new Pearlie bag/keychain, customizer option, or Little Calm Corner feature
+labels: ["feature", "enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: Thank you for proposing a new creation or enhancement for Pearlie Handcrafted 🔮 × Little Calm Corner ☁️!
+  - type: textarea
+    id: problem
+    attributes:
+      label: Feature / Creation Overview
+      description: Describe the new bag, keychain, palette, or website feature you would like to add.
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Details (Price in MAD, Colors, Translations, or UI Flow)
+      description: Include any photos, MAD pricing, bead count, or design details.
+    validations:
+      required: true

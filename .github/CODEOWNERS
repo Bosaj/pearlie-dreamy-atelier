@@ -1,0 +1,17 @@
+# Global Codeowners for Pearlie Handcrafted × Little Calm Corner Digital Maison
+# https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# Co-owned by project creator (@Bosaj) and brand founder & developer (@IhsaneFathi)
+* @Bosaj @IhsaneFathi
+
+# Boutique catalog, bespoke studio, and Calm Corner content
+/src/data/ @Bosaj @IhsaneFathi
+/src/components/ @Bosaj @IhsaneFathi
+/public/images/ @Bosaj @IhsaneFathi
+
+# Core CI/CD, automation, and security policies
+/.github/ @Bosaj @IhsaneFathi
+/.github/workflows/ @Bosaj @IhsaneFathi
+/SECURITY.md @Bosaj @IhsaneFathi
+/LICENSE @Bosaj @IhsaneFathi
+/README.md @Bosaj @IhsaneFathi

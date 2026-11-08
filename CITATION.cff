@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you reference this software architecture, 3D pearl refraction canvas, or bespoke configurator, please cite it as below."
+authors:
+  - family-names: "EL HADJI"
+    given-names: "Oussama"
+    email: "oussousselhadji@gmail.com"
+    affiliation: "École Nationale d'Intelligence Artificielle et du Digital (ENIAD), Mohammed First University"
+  - family-names: "FATHI"
+    given-names: "Ihsane"
+    affiliation: "École Nationale d'Intelligence Artificielle et du Digital (ENIAD), Mohammed First University"
+title: "Pearlie Handcrafted × Little Calm Corner — Futuristic Pearlescent Haute-Couture Digital Maison"
+version: 1.2.0
+date-released: 2026-11-08
+url: "https://bosaj.github.io/pearlie-dreamy-atelier/"
+repository-code: "https://github.com/Bosaj/pearlie-dreamy-atelier"
+keywords:
+  - "react-19"
+  - "typescript"
+  - "tailwindcss-v4"
+  - "3d-canvas"
+  - "luxury-ecommerce"
+  - "bespoke-configurator"
+  - "eniad"
+  - "morocco"
