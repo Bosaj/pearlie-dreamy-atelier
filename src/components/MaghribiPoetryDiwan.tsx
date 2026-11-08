@@ -448,7 +448,7 @@ export const MaghribiPoetryDiwan: React.FC<MaghribiPoetryDiwanProps> = ({ lang, 
                   خُطَّ بِقَلَمِ المَوَدَّةِ لِإِحْسَان فَتْحِي — بِيرْلي وَرُكْنُ الهُدُوءِ
                 </div>
                 <div className="text-[11px] opacity-65">
-                   الخط المغربي المبسوط (Bouazzi Maghribi · MIT) · المملكة المغربية 🇲🇦
+                   الخط المغربي الأصيل (Bouazzi Maghribi) · جميع الحقوق التجارية محفوظة لبيرلي وإحسان فتحي © 🇲🇦
                 </div>
               </div>
             </div>

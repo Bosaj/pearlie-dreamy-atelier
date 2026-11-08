@@ -9,7 +9,7 @@
 [![CI](https://github.com/Bosaj/pearlie-dreamy-atelier/actions/workflows/ci.yml/badge.svg)](https://github.com/Bosaj/pearlie-dreamy-atelier/actions/workflows/ci.yml)
 [![Pages](https://github.com/Bosaj/pearlie-dreamy-atelier/actions/workflows/deploy.yml/badge.svg)](https://bosaj.github.io/pearlie-dreamy-atelier/)
 [![Latest release](https://img.shields.io/github/v/release/Bosaj/pearlie-dreamy-atelier?sort=semver)](https://github.com/Bosaj/pearlie-dreamy-atelier/releases/latest)
-[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![License: Proprietary — Pearlie Handcrafted](https://img.shields.io/badge/license-Proprietary%20%C2%B7%20All%20Rights%20Reserved-D8B4E2.svg)](LICENSE)
 
 ![Pearlie Handcrafted Hero Stage](docs/home.png)
 
@@ -122,6 +122,6 @@ npm run build
 
 This project follows [Semantic Versioning](https://semver.org/) (`vX.Y.Z`). Every release has a matching Git tag, GitHub Release, Milestone, and entry in [CHANGELOG.md](CHANGELOG.md).
 
-- **Co-Owners & Admins:** [Oussama EL HADJI (`@Bosaj`)](https://github.com/Bosaj) & [Ihsane FATHI (`@IhsaneFathi`)](https://github.com/IhsaneFathi)
+- **Co-Owners & Admins:** [Ihsane FATHI (`@IhsaneFathi`)](https://github.com/IhsaneFathi) & [Oussama EL HADJI (`@Bosaj`)](https://github.com/Bosaj)
 - **Documentation:** [GitHub Wiki](https://github.com/Bosaj/pearlie-dreamy-atelier/wiki) · [Changelog](CHANGELOG.md) · [Contributing](CONTRIBUTING.md) · [Security Policy](SECURITY.md)
-- **License:** [MIT License](LICENSE)
+- **License:** [Proprietary Commercial License — All Rights Reserved (`Pearlie Handcrafted` & `Little Calm Corner` — Ihsane FATHI)](LICENSE) — *Private commercial property; unauthorized copying, redistribution, or commercial use is strictly prohibited.*
