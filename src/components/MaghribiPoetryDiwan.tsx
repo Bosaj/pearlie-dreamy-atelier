@@ -390,8 +390,9 @@ export const MaghribiPoetryDiwan: React.FC<MaghribiPoetryDiwanProps> = ({ lang, 
           <div dir="rtl" className="space-y-4 sm:space-y-6 max-w-4xl mx-auto">
             {currentPoem.abyat.map((bayt, idx) => (
               <div
-                key={idx}
-                className={`rounded-2xl p-4 sm:p-6 transition-all ${
+                key={`${activePoemId}-${fontStyle}-${idx}`}
+                style={{ animationDelay: `${idx * 90}ms` }}
+                className={`animate-couture-reveal hover-lift rounded-2xl p-4 sm:p-6 transition-all ${
                   lightMode
                     ? 'bg-white/80 ring-1 ring-amber-900/10 shadow-sm'
                     : 'bg-white/[0.03] ring-1 ring-white/10 hover:ring-[#F3E5AB]/35'
@@ -409,7 +410,7 @@ export const MaghribiPoetryDiwan: React.FC<MaghribiPoetryDiwanProps> = ({ lang, 
                   {/* Central Pearl Medallion Separator */}
                   <div className="md:col-span-1 flex items-center justify-center py-0.5 md:py-0">
                     <span
-                      className="inline-flex items-center justify-center w-6 h-6 rounded-full text-xs text-[#F3E5AB] bg-[#F3E5AB]/15 ring-1 ring-[#F3E5AB]/35"
+                      className="animate-medallion inline-flex items-center justify-center w-6 h-6 rounded-full text-xs text-[#F3E5AB] bg-[#F3E5AB]/15 ring-1 ring-[#F3E5AB]/35"
                       aria-hidden="true"
                     >
                       ❖

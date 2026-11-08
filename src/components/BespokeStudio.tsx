@@ -435,7 +435,7 @@ export const BespokeStudio: React.FC<BespokeStudioProps> = ({ lang, lightMode, o
 
         {/* Right: Live Holographic Blueprint Preview Card (5 cols) */}
         <div
-          className={`lg:col-span-5 p-2 rounded-[2rem] ${
+          className={`lg:col-span-5 animate-float-delayed p-2 rounded-[2rem] ${
             lightMode
               ? 'bg-purple-950/[0.04] ring-1 ring-purple-950/10'
               : 'bg-white/[0.04] ring-1 ring-white/12'
@@ -460,7 +460,10 @@ export const BespokeStudio: React.FC<BespokeStudioProps> = ({ lang, lightMode, o
             </div>
 
             {/* Interactive Visual Preview Frame */}
-            <div className="relative rounded-2xl overflow-hidden aspect-[4/3] mb-5 ring-1 ring-white/15 group">
+            <div
+              key={`${silhouette}-${palette}-${initialLetter}`}
+              className="img-shimmer-frame animate-couture-reveal relative rounded-2xl overflow-hidden aspect-[4/3] mb-5 ring-1 ring-white/15 group"
+            >
               <img
                 src={activeSilhouette.previewImage}
                 alt={activeSilhouette.name[lang]}

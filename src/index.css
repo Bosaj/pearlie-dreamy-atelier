@@ -90,22 +90,199 @@
   transition-timing-function: cubic-bezier(0.32, 0.72, 0, 1);
 }
 
-/* Tactile Press Feedback */
+/* Tactile Press Feedback + Pearlescent Sheen Sweep on All Buttons & Interactive Pills */
+button,
 .press-feedback {
-  transition: transform 160ms cubic-bezier(0.23, 1, 0.32, 1), opacity 160ms cubic-bezier(0.23, 1, 0.32, 1);
-}
-.press-feedback:active {
-  transform: scale(0.97);
+  position: relative;
+  overflow: hidden;
+  transition:
+    transform 240ms cubic-bezier(0.23, 1, 0.32, 1),
+    box-shadow 280ms cubic-bezier(0.23, 1, 0.32, 1),
+    background-color 220ms cubic-bezier(0.23, 1, 0.32, 1),
+    opacity 180ms cubic-bezier(0.23, 1, 0.32, 1);
+  will-change: transform;
 }
 
-/* Hover only on fine pointer devices */
+button::after,
+.press-feedback::after {
+  content: "";
+  position: absolute;
+  inset: -20%;
+  width: 45%;
+  background: linear-gradient(
+    115deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.28) 50%,
+    transparent 100%
+  );
+  transform: translateX(-260%) skewX(-22deg);
+  transition: transform 680ms cubic-bezier(0.23, 1, 0.32, 1);
+  pointer-events: none;
+}
+
+button:hover::after,
+button:focus-visible::after,
+.press-feedback:hover::after,
+.press-feedback:focus-visible::after {
+  transform: translateX(340%) skewX(-22deg);
+}
+
+button:active,
+.press-feedback:active {
+  transform: scale(0.95) !important;
+}
+
+/* Hover lift & 3D couture card physics */
 @media (hover: hover) and (pointer: fine) {
+  button:hover,
+  .press-feedback:hover {
+    transform: translateY(-2px) scale(1.02);
+  }
+
   .hover-lift {
-    transition: transform 500ms cubic-bezier(0.23, 1, 0.32, 1);
+    transition:
+      transform 520ms cubic-bezier(0.23, 1, 0.32, 1),
+      box-shadow 520ms cubic-bezier(0.23, 1, 0.32, 1);
+    will-change: transform;
   }
+
   .hover-lift:hover {
-    transform: translateY(-6px);
+    transform: translateY(-8px) scale(1.012);
+    box-shadow: 0 24px 55px -16px rgba(216, 180, 226, 0.25);
   }
+
+  a:hover > img,
+  button:hover > img,
+  .group:hover img {
+    transform: scale(1.06);
+  }
+}
+
+/* Perpetual Floating Levitation for Hero, Highlights & Feature Cards */
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes floatGentle {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-5px) rotate(0.6deg);
+  }
+}
+
+@keyframes nacreShimmer {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+@keyframes pearlPulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(216, 180, 226, 0.25), 0 0 0 0 rgba(249, 213, 229, 0.25);
+  }
+  50% {
+    box-shadow: 0 0 34px rgba(216, 180, 226, 0.52), 0 0 0 6px rgba(249, 213, 229, 0);
+  }
+}
+
+@keyframes coutureReveal {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.985);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes medallionSpin {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.12);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+.animate-float-slow {
+  animation: floatSlow 5.8s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: floatGentle 6.4s ease-in-out 1.4s infinite;
+}
+
+.animate-pearl-glow {
+  animation: pearlPulseGlow 3.6s ease-in-out infinite;
+}
+
+.animate-couture-reveal {
+  animation: coutureReveal 620ms cubic-bezier(0.23, 1, 0.32, 1) both;
+}
+
+.animate-medallion {
+  animation: medallionSpin 12s linear infinite;
+}
+
+/* Smooth Couture Image Transitions & Specular Glint */
+img {
+  transition:
+    transform 620ms cubic-bezier(0.23, 1, 0.32, 1),
+    filter 450ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.img-shimmer-frame {
+  position: relative;
+  overflow: hidden;
+}
+
+.img-shimmer-frame::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    125deg,
+    transparent 30%,
+    rgba(255, 255, 255, 0.22) 50%,
+    transparent 70%
+  );
+  transform: translateX(-140%);
+  transition: transform 820ms cubic-bezier(0.23, 1, 0.32, 1);
+  pointer-events: none;
+}
+
+.group:hover .img-shimmer-frame::after,
+.img-shimmer-frame:hover::after {
+  transform: translateX(140%);
+}
+
+/* Scroll-Triggered Component Reveal */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(24px) scale(0.985);
+  transition:
+    opacity 680ms cubic-bezier(0.23, 1, 0.32, 1),
+    transform 680ms cubic-bezier(0.23, 1, 0.32, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
 }
 
 /* Iridescent Mother-of-Pearl Shimmer Text */
@@ -120,6 +297,7 @@
     #ffffff 100%
   );
   background-size: 200% auto;
+  animation: nacreShimmer 7s linear infinite;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

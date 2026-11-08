@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import {
   Sparkles,
   ShoppingBag,
@@ -101,6 +101,43 @@ export function App() {
     []
   );
   const currentHeroProduct = heroProducts[heroShowcaseIndex % heroProducts.length] || PEARLIE_PRODUCTS[0];
+
+  // Auto-cycle the Hero 3D couture product showcase every 5.5s unless a modal is open
+  useEffect(() => {
+    if (selectedProduct || surpriseModalOpen || manifestoOpen || bagOpen) return;
+    const timer = window.setInterval(() => {
+      setHeroShowcaseIndex((prev) => (prev + 1) % heroProducts.length);
+    }, 5500);
+    return () => window.clearInterval(timer);
+  }, [heroProducts.length, selectedProduct, surpriseModalOpen, manifestoOpen, bagOpen]);
+
+  // Universal Scroll-Reveal Observer for all sections, cards, and gallery tiles
+  useEffect(() => {
+    const targets = document.querySelectorAll(
+      'section, article, .hover-lift, #lookbook a, #calm-corner a'
+    );
+    if (!('IntersectionObserver' in window)) {
+      targets.forEach((el) => el.classList.add('is-visible'));
+      return;
+    }
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.08, rootMargin: '0px 0px -30px 0px' }
+    );
+    targets.forEach((el, idx) => {
+      el.classList.add('reveal-on-scroll');
+      (el as HTMLElement).style.transitionDelay = `${(idx % 5) * 45}ms`;
+      observer.observe(el);
+    });
+    return () => observer.disconnect();
+  }, [activeCategory, lookbookFilter, searchQuery, lang]);
 
   const filteredProducts = useMemo(() => {
     return PEARLIE_PRODUCTS.filter((item) => {
@@ -645,7 +682,7 @@ export function App() {
             </div>
 
             {/* Right Column: Double-Bezel Interactive Hero Showcase (5 cols) */}
-            <div className="lg:col-span-5">
+            <div className="lg:col-span-5 animate-float-slow">
               <div
                 className={`p-2 rounded-[2.25rem] ${
                   lightMode
@@ -671,8 +708,9 @@ export function App() {
 
                   {/* Main Featured Product Photo */}
                   <div
+                    key={currentHeroProduct.id}
                     onClick={() => openProductModal(currentHeroProduct)}
-                    className="relative aspect-[4/5] rounded-2xl overflow-hidden cursor-pointer group"
+                    className="img-shimmer-frame animate-couture-reveal relative aspect-[4/5] rounded-2xl overflow-hidden cursor-pointer group"
                   >
                     <img
                       src={currentHeroProduct.image}
@@ -969,7 +1007,7 @@ export function App() {
                       {/* Image Container */}
                       <div
                         onClick={() => openProductModal(product)}
-                        className="relative aspect-[4/5] rounded-2xl overflow-hidden mb-3.5 cursor-pointer"
+                        className="img-shimmer-frame relative aspect-[4/5] rounded-2xl overflow-hidden mb-3.5 cursor-pointer"
                       >
                         <img
                           src={product.image}

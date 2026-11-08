@@ -150,7 +150,10 @@ export const CalmCornerPortal: React.FC<CalmCornerPortalProps> = ({ lang, lightM
               </button>
             </div>
 
-            <blockquote className="font-display text-2xl sm:text-4xl font-light italic leading-snug my-4">
+            <blockquote
+              key={affirmationIdx}
+              className="animate-couture-reveal font-display text-2xl sm:text-4xl font-light italic leading-snug my-4"
+            >
               {affirmations[affirmationIdx]}
             </blockquote>
 
