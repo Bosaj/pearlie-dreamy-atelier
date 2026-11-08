@@ -18,8 +18,8 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and thi
 
 ## [1.2.0] — 2026-11-08
 ### Added
-- **Co-Admin & Developer Governance for `@IhsaneFathi`**:
-  - Added **Ihsane FATHI (`@IhsaneFathi`)** as repository collaborator/co-owner alongside **Oussama EL HADJI (`@Bosaj`)** in `.github/CODEOWNERS`, `CONTRIBUTORS.md`, `CITATION.cff`, and `package.json`.
+- **Admin & Developer Governance for `@IhsaneFathi`**:
+  - Added **Ihsane FATHI (`@IhsaneFathi`)** as repository administrator and owner in `.github/CODEOWNERS`, `CONTRIBUTORS.md`, `CITATION.cff`, and `package.json`.
 - **Full GitHub Repository Engineering Standards**:
   - Added comprehensive `README.md`, `CHANGELOG.md`, `CONTRIBUTING.md`, `CONTRIBUTORS.md`, `CODE_OF_CONDUCT.md`, `SECURITY.md`, `LICENSE`, `CITATION.cff`, and `.env.example`.
   - Added `.github/ISSUE_TEMPLATE/bug_report.yml`, `.github/ISSUE_TEMPLATE/feature_request.yml`, `.github/PULL_REQUEST_TEMPLATE.md`, `.github/FUNDING.yml`, and `.github/CODEOWNERS`.

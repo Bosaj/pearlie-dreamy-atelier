@@ -3,14 +3,9 @@
   "private": true,
   "version": "1.3.0",
   "type": "module",
-  "description": "Futuristic Pearlescent Haute-Couture Digital Maison & 3D Bespoke Atelier for Pearlie Handcrafted (@_pearlie.dreamy) × Little Calm Corner (@__little.calmcorner) — Co-owned by Oussama EL HADJI (@Bosaj) & Ihsane FATHI (@IhsaneFathi).",
-  "author": "Oussama EL HADJI <oussousselhadji@gmail.com> (https://github.com/Bosaj)",
+  "description": "Futuristic Pearlescent Haute-Couture Digital Maison & 3D Bespoke Atelier for Pearlie Handcrafted (@_pearlie.dreamy) × Little Calm Corner (@__little.calmcorner) — Owned by Ihsane FATHI (@IhsaneFathi).",
+  "author": "Ihsane FATHI (https://github.com/IhsaneFathi)",
   "contributors": [
-    {
-      "name": "Oussama EL HADJI",
-      "email": "oussousselhadji@gmail.com",
-      "url": "https://github.com/Bosaj"
-    },
     {
       "name": "Ihsane FATHI",
       "url": "https://github.com/IhsaneFathi"

@@ -1,10 +1,10 @@
 # Contributing to Pearlie Handcrafted 🔮 × Little Calm Corner ☁️
 
-Welcome! This repository powers the digital maison for **Pearlie Handcrafted (`@_pearlie.dreamy`)** and **Little Calm Corner (`@__little.calmcorner`)**, co-maintained by **Oussama EL HADJI (`@Bosaj`)** and **Ihsane FATHI (`@IhsaneFathi`)**.
+Welcome! This repository powers the digital maison for **Pearlie Handcrafted (`@_pearlie.dreamy`)** and **Little Calm Corner (`@__little.calmcorner`)**, owned and maintained by **Ihsane FATHI (`@IhsaneFathi`)**.
 
 ## Developer Workflow
 
-1. **Branch from `main`** (or commit directly to `main` if you are `@IhsaneFathi` or `@Bosaj`):
+1. **Branch from `main`** (or commit directly to `main` if you are `@IhsaneFathi`):
    - Feature branch: `feat/<short-name>`
    - Bugfix branch: `fix/<short-name>`
    - Catalog update: `content/<short-name>`

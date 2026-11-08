@@ -54,8 +54,8 @@ Welcome to the official engineering and brand documentation for **Pearlie Handcr
 
 ---
 
-## 🛡️ Governance, Commercial License & Co-Ownership
+## 🛡️ Governance, Commercial License & Ownership
 
 - **Exclusive Commercial Ownership:** Proprietary commercial property of **Ihsane FATHI (`@IhsaneFathi` / `@ihsane__ft`)** — **Pearlie Handcrafted (`@_pearlie.dreamy`)** & **Little Calm Corner (`@__little.calmcorner`)** — All Rights Reserved.
-- **Co-Owners & Administrators:** [Ihsane FATHI (`@IhsaneFathi`)](https://github.com/IhsaneFathi) & [Oussama EL HADJI (`@Bosaj`)](https://github.com/Bosaj)
+- **Owner & Administrator:** [Ihsane FATHI (`@IhsaneFathi`)](https://github.com/IhsaneFathi)
 - **Deterministic CI Verification:** Every local image asset (`npm run verify:assets`), TypeScript type (`npm run typecheck`), and catalog invariant (`npm test`) is checked automatically in GitHub Actions on every push.

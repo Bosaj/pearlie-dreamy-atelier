@@ -4,7 +4,7 @@
 
 **Live Production (GitHub Pages):** [https://bosaj.github.io/pearlie-dreamy-atelier/](https://bosaj.github.io/pearlie-dreamy-atelier/)  
 **WhatsApp Atelier Concierge:** [https://wa.me/message/HYSIBOQVMTCAE1](https://wa.me/message/HYSIBOQVMTCAE1)  
-**Status:** v1.3.0 · **Authors & Co-Admins:** [Oussama EL HADJI](https://github.com/Bosaj) & [Ihsane FATHI](https://github.com/IhsaneFathi)
+**Status:** v1.3.0 · **Owner & Founder:** [Ihsane FATHI (`@IhsaneFathi` / `@ihsane__ft`)](https://github.com/IhsaneFathi)
 
 [![CI](https://github.com/Bosaj/pearlie-dreamy-atelier/actions/workflows/ci.yml/badge.svg)](https://github.com/Bosaj/pearlie-dreamy-atelier/actions/workflows/ci.yml)
 [![Pages](https://github.com/Bosaj/pearlie-dreamy-atelier/actions/workflows/deploy.yml/badge.svg)](https://bosaj.github.io/pearlie-dreamy-atelier/)
@@ -122,6 +122,6 @@ npm run build
 
 This project follows [Semantic Versioning](https://semver.org/) (`vX.Y.Z`). Every release has a matching Git tag, GitHub Release, Milestone, and entry in [CHANGELOG.md](CHANGELOG.md).
 
-- **Co-Owners & Admins:** [Ihsane FATHI (`@IhsaneFathi`)](https://github.com/IhsaneFathi) & [Oussama EL HADJI (`@Bosaj`)](https://github.com/Bosaj)
+- **Owner & Admin:** [Ihsane FATHI (`@IhsaneFathi`)](https://github.com/IhsaneFathi)
 - **Documentation:** [GitHub Wiki](https://github.com/Bosaj/pearlie-dreamy-atelier/wiki) · [Changelog](CHANGELOG.md) · [Contributing](CONTRIBUTING.md) · [Security Policy](SECURITY.md)
 - **License:** [Proprietary Commercial License — All Rights Reserved (`Pearlie Handcrafted` & `Little Calm Corner` — Ihsane FATHI)](LICENSE) — *Private commercial property; unauthorized copying, redistribution, or commercial use is strictly prohibited.*

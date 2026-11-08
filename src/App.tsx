@@ -1365,7 +1365,7 @@ export function App() {
                 © 2026 Pearlie Handcrafted & Little Calm Corner · Private Commercial Property of Ihsane Fathi (@ihsane__ft) · All Rights Reserved · Delivery all over Morocco 🚚🇲🇦
               </div>
               <div dir="rtl" className="font-maghribi text-base sm:text-lg text-[#F3E5AB] mt-1">
-                إِحْسَان فَتْحِي (@IhsaneFathi) ❖ أُسَامَة الحَاجِي (@Bosaj)
+                إِحْسَان فَتْحِي (@ihsane__ft) ❖ بِيرْلي وَرُكْنُ الهُدُوءِ
               </div>
             </div>
           </div>
