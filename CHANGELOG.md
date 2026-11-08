@@ -5,6 +5,17 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and thi
 
 ## [Unreleased]
 
+## [1.3.0] — 2026-11-08
+### Added
+- **Diwan al-Durr (`ديوان الدُّرّ واللؤلؤ` — `src/components/MaghribiPoetryDiwan.tsx`)**:
+  - Dedicated Classical Arabic Poetry & Moroccan Maghribi Calligraphy pavilion celebrating **Ihsane (`@ihsane__ft`)**, **Pearlie Handcrafted (`@_pearlie.dreamy`)**, and **Little Calm Corner (`@__little.calmcorner`)**.
+  - Bundled the complete **`Bouazzi Maghribi`** calligraphic font (`public/fonts/BouazziMaghribi-Regular.woff2` & `.ttf` + `src/assets/fonts/`) alongside **`Aref Ruqaa`** and **`Amiri`** with a live 3-script calligraphy switcher (`الخط المغربي` / `خط الرقعة` / `الخط الأميري`), translation toggle, and 1-click poem copy.
+  - Added 4 bespoke classical Arabic poems across traditional meters (*Bahr al-Kamil*, *Bahr al-Basit*, *Bahr al-Wafir*, and *Al-Muwashshah al-Maghribi*), plus featured Maghribi couplets in the Hero banner, Founder section, Surprise Tribute Modal, and Footer colophon.
+- **Full Mobile Phone Display Responsiveness (`320px` – `430px`)**:
+  - Engineered adaptive Floating Glass Pill Navbar, touch-friendly horizontal pill carousels (`.no-scrollbar`), responsive two-hemistich-to-stacked poetic couplets, and zero horizontal overflow (`docScrollW === vw`) verified across `340px`, `360px`, `375px`, and `390px` phone viewports in English (`LTR`), French (`LTR`), and Arabic (`RTL`).
+- **Official GitHub Wiki Live Synchronization**:
+  - Pushed all 9 multi-page documentation guides directly to [`Bosaj/pearlie-dreamy-atelier.wiki.git`](https://github.com/Bosaj/pearlie-dreamy-atelier/wiki).
+
 ## [1.2.0] — 2026-11-08
 ### Added
 - **Co-Admin & Developer Governance for `@IhsaneFathi`**:

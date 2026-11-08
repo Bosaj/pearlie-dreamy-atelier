@@ -52,6 +52,7 @@ import { PearlFieldCanvas, PearlSpectrum } from './components/PearlFieldCanvas';
 import { BespokeStudio } from './components/BespokeStudio';
 import { CalmCornerPortal } from './components/CalmCornerPortal';
 import { FounderSurpriseModal } from './components/FounderSurpriseModal';
+import { MaghribiPoetryDiwan } from './components/MaghribiPoetryDiwan';
 
 interface BagItem {
   id: string;
@@ -213,44 +214,50 @@ export function App() {
       </div>
 
       {/* =====================================================================
-          FLUID ISLAND FLOATING NAVBAR (Detached Glass Pill)
+          FLUID ISLAND FLOATING NAVBAR (Detached Glass Pill — 320px+ Responsive)
          ===================================================================== */}
-      <header className="fixed top-4 sm:top-6 inset-x-0 z-40 flex justify-center px-3 pointer-events-none">
+      <header className="fixed top-3 sm:top-6 inset-x-0 z-40 flex justify-center px-2 sm:px-3 pointer-events-none">
         <nav
           aria-label="Primary Navigation"
-          className={`pointer-events-auto flex items-center justify-between gap-2 sm:gap-5 px-3.5 sm:px-6 py-2.5 rounded-full backdrop-blur-2xl transition-all duration-300 max-w-full ${
+          className={`pointer-events-auto flex items-center justify-between gap-1.5 sm:gap-4 px-2.5 sm:px-6 py-2 sm:py-2.5 rounded-full backdrop-blur-2xl transition-all duration-300 w-full max-w-[calc(100vw-1rem)] sm:w-auto sm:max-w-full ${
             lightMode
               ? 'bg-white/85 text-stone-900 ring-1 ring-purple-950/10 shadow-[0_12px_40px_rgba(42,27,56,0.08)]'
-              : 'bg-[#110C1A]/80 text-white ring-1 ring-white/15 shadow-[0_16px_50px_rgba(0,0,0,0.55)]'
+              : 'bg-[#110C1A]/85 text-white ring-1 ring-white/15 shadow-[0_16px_50px_rgba(0,0,0,0.55)]'
           }`}
         >
           {/* Brand Logo Pill */}
-          <a href="#top" className="flex items-center gap-2.5 pr-1 shrink-0 group">
+          <a href="#top" className="flex items-center gap-2 pr-0.5 shrink-0 group">
             <img
               src="./images/pearlie_dom_00.jpg"
               alt="Pearlie Handcrafted Logo"
-              className="w-9 h-9 rounded-full object-cover ring-1 ring-[#D8B4E2]/60 group-hover:scale-105 transition-transform"
+              className="w-8 h-8 sm:w-9 sm:h-9 rounded-full object-cover ring-1 ring-[#D8B4E2]/60 group-hover:scale-105 transition-transform"
             />
             <div className="leading-none">
-              <span className="font-display text-lg sm:text-xl font-semibold tracking-wide block">
+              <span className="font-display text-base sm:text-xl font-semibold tracking-wide block">
                 Pearlie
               </span>
-              <span className="text-[9px] font-mono-tech uppercase tracking-[0.22em] text-[#D8B4E2] block">
+              <span className="text-[8px] sm:text-[9px] font-mono-tech uppercase tracking-[0.16em] sm:tracking-[0.22em] text-[#D8B4E2] block">
                 HANDCRAFTED
               </span>
             </div>
           </a>
 
           {/* Desktop Navigation Links */}
-          <div className="hidden lg:flex items-center gap-6 text-xs font-medium tracking-wide">
+          <div className="hidden lg:flex items-center gap-5 text-xs font-medium tracking-wide">
             <a href="#boutique" className="opacity-75 hover:opacity-100 transition-opacity">
-              {lang === 'ar' ? 'المتجر' : lang === 'fr' ? 'Boutique Couture' : 'Boutique'}
+              {lang === 'ar' ? 'المتجر' : lang === 'fr' ? 'Boutique' : 'Boutique'}
             </a>
-            <a href="#atelier-customizer" className="opacity-75 hover:opacity-100 transition-opacity">
-              {lang === 'ar' ? 'تصميم حسب الطلب' : lang === 'fr' ? 'Atelier Sur-Mesure' : 'Bespoke Studio'}
+            <a
+              href="#diwan"
+              className="text-[#F3E5AB] opacity-90 hover:opacity-100 transition-opacity font-maghribi text-base"
+            >
+              {lang === 'ar' ? 'ديوان الدُّرّ 📜' : 'Diwan المغربي 📜'}
+            </a>
+            <a href="#bespoke" className="opacity-75 hover:opacity-100 transition-opacity">
+              {lang === 'ar' ? 'تصميم خاص' : lang === 'fr' ? 'Sur-Mesure' : 'Bespoke Studio'}
             </a>
             <a href="#lookbook" className="opacity-75 hover:opacity-100 transition-opacity">
-              {lang === 'ar' ? 'أرشيف الصور (24)' : lang === 'fr' ? 'Lookbook (24)' : 'Lookbook (24)'}
+              {lang === 'ar' ? 'الأرشيف (24)' : 'Lookbook (24)'}
             </a>
             <a
               href="#calm-corner"
@@ -261,15 +268,15 @@ export function App() {
           </div>
 
           {/* Right Controls: Surprise Button, Lang, Theme, Bag, Mobile Menu */}
-          <div className="flex items-center gap-1.5 sm:gap-2">
+          <div className="flex items-center gap-1 sm:gap-2 shrink-0">
             {/* Surprise Tribute Trigger for Ihsane */}
             <button
               type="button"
               onClick={() => setSurpriseModalOpen(true)}
-              className="press-feedback inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[11px] font-medium bg-gradient-to-r from-[#D8B4E2]/25 via-[#F9D5E5]/25 to-[#F3E5AB]/25 ring-1 ring-[#D8B4E2]/50 text-[#F9D5E5]"
+              className="press-feedback inline-flex items-center justify-center gap-1.5 w-7 h-7 sm:w-auto sm:h-auto sm:px-3 sm:py-1.5 rounded-full text-[11px] font-medium bg-gradient-to-r from-[#D8B4E2]/25 via-[#F9D5E5]/25 to-[#F3E5AB]/25 ring-1 ring-[#D8B4E2]/50 text-[#F9D5E5]"
               title="Special Surprise for Ihsane (@ihsane__ft)"
             >
-              <Crown className="w-3.5 h-3.5 text-[#F3E5AB]" />
+              <Crown className="w-3.5 h-3.5 text-[#F3E5AB] shrink-0" />
               <span className="hidden sm:inline">
                 {lang === 'ar' ? 'مفاجأة لإحسان ✨' : lang === 'fr' ? 'Pour Ihsane ✨' : 'For Ihsane ✨'}
               </span>
@@ -277,7 +284,7 @@ export function App() {
 
             {/* Language Switcher */}
             <div
-              className={`flex items-center rounded-full p-0.5 text-[10px] font-mono-tech ${
+              className={`flex items-center rounded-full p-0.5 text-[9px] sm:text-[10px] font-mono-tech ${
                 lightMode ? 'bg-stone-200/70' : 'bg-white/[0.06]'
               }`}
             >
@@ -286,7 +293,7 @@ export function App() {
                   key={l}
                   type="button"
                   onClick={() => setLang(l)}
-                  className={`px-2 py-1 rounded-full uppercase transition-colors ${
+                  className={`px-1.5 sm:px-2 py-0.5 sm:py-1 rounded-full uppercase transition-colors ${
                     lang === l
                       ? 'bg-[#D8B4E2] text-[#09060E] font-semibold'
                       : 'opacity-65 hover:opacity-100'
@@ -297,12 +304,12 @@ export function App() {
               ))}
             </div>
 
-            {/* Atmosphere Mode Switcher */}
+            {/* Atmosphere Mode Switcher (Visible on sm+, and inside mobile drawer on xs) */}
             <button
               type="button"
               onClick={() => setLightMode((m) => !m)}
               aria-label="Toggle atmosphere mode"
-              className={`press-feedback w-8 h-8 rounded-full flex items-center justify-center ${
+              className={`hidden sm:flex press-feedback w-8 h-8 rounded-full items-center justify-center ${
                 lightMode
                   ? 'bg-stone-200/80 text-purple-950'
                   : 'bg-white/[0.07] text-[#F3E5AB] hover:bg-white/15'
@@ -315,9 +322,9 @@ export function App() {
             <button
               type="button"
               onClick={() => setBagOpen(true)}
-              className="press-feedback relative inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[#D8B4E2] text-[#09060E] text-xs font-semibold shadow-[0_0_20px_rgba(216,180,226,0.4)]"
+              className="press-feedback relative inline-flex items-center gap-1 px-2.5 sm:px-3.5 py-1 sm:py-1.5 rounded-full bg-[#D8B4E2] text-[#09060E] text-[11px] sm:text-xs font-semibold shadow-[0_0_20px_rgba(216,180,226,0.4)]"
             >
-              <ShoppingBag className="w-3.5 h-3.5" />
+              <ShoppingBag className="w-3 h-3 sm:w-3.5 sm:h-3.5" />
               <span>{totalBagCount}</span>
             </button>
 
@@ -326,15 +333,15 @@ export function App() {
               type="button"
               onClick={() => setMobileMenuOpen((o) => !o)}
               aria-label="Toggle navigation menu"
-              className="lg:hidden press-feedback w-8 h-8 rounded-full bg-white/10 flex flex-col items-center justify-center gap-1 relative"
+              className="lg:hidden press-feedback w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-white/10 flex flex-col items-center justify-center gap-1 relative shrink-0"
             >
               <span
-                className={`w-4 h-[1.5px] bg-current transition-transform duration-200 ${
+                className={`w-3.5 h-[1.5px] bg-current transition-transform duration-200 ${
                   mobileMenuOpen ? 'rotate-45 translate-y-[2.5px]' : ''
                 }`}
               />
               <span
-                className={`w-4 h-[1.5px] bg-current transition-transform duration-200 ${
+                className={`w-3.5 h-[1.5px] bg-current transition-transform duration-200 ${
                   mobileMenuOpen ? '-rotate-45 -translate-y-[2.5px]' : ''
                 }`}
               />
@@ -345,31 +352,59 @@ export function App() {
 
       {/* Mobile Glass Overlay Menu */}
       {mobileMenuOpen && (
-        <div className="fixed inset-0 z-30 bg-black/85 backdrop-blur-3xl flex flex-col items-center justify-center p-8 text-center animate-modal-enter lg:hidden">
-          <div className="space-y-6 font-display text-3xl text-white">
+        <div className="fixed inset-0 z-30 bg-black/90 backdrop-blur-3xl flex flex-col items-center justify-center p-6 text-center animate-modal-enter lg:hidden overflow-y-auto">
+          <div className="space-y-5 font-display text-2xl sm:text-3xl text-white max-w-xs w-full">
             <a href="#boutique" onClick={() => setMobileMenuOpen(false)} className="block hover:text-[#D8B4E2]">
-              Boutique Couture
+              {lang === 'ar' ? 'متجر اللؤلؤ والكريستال 💎' : 'Boutique Couture'}
             </a>
-            <a href="#atelier-customizer" onClick={() => setMobileMenuOpen(false)} className="block hover:text-[#D8B4E2]">
-              Atelier Sur-Mesure (A–Z)
+            <a
+              href="#diwan"
+              onClick={() => setMobileMenuOpen(false)}
+              className="block font-maghribi text-3xl text-[#F3E5AB]"
+            >
+              ديوان الدُّرّ بالخط المغربي 📜
+            </a>
+            <a href="#bespoke" onClick={() => setMobileMenuOpen(false)} className="block hover:text-[#D8B4E2]">
+              {lang === 'ar' ? 'تصميم حسب الطلب (A–Z)' : 'Atelier Sur-Mesure (A–Z)'}
             </a>
             <a href="#lookbook" onClick={() => setMobileMenuOpen(false)} className="block hover:text-[#D8B4E2]">
-              24-Post Instagram Lookbook
+              {lang === 'ar' ? 'أرشيف إنستغرام (24)' : '24-Post Instagram Lookbook'}
             </a>
             <a href="#calm-corner" onClick={() => setMobileMenuOpen(false)} className="block text-[#F9D5E5]">
               Little Calm Corner ☁️
             </a>
-            <button
-              type="button"
-              onClick={() => {
-                setMobileMenuOpen(false);
-                setSurpriseModalOpen(true);
-              }}
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-base font-sans bg-[#D8B4E2] text-black font-semibold"
-            >
-              <Crown className="w-4 h-4" />
-              <span>Surprise For Ihsane (@ihsane__ft)</span>
-            </button>
+            <div className="pt-2 flex flex-col gap-3">
+              <button
+                type="button"
+                onClick={() => {
+                  setLightMode((m) => !m);
+                  setMobileMenuOpen(false);
+                }}
+                className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full text-xs font-sans bg-white/10 text-white ring-1 ring-white/20"
+              >
+                {lightMode ? <Moon className="w-3.5 h-3.5" /> : <Sun className="w-3.5 h-3.5 text-[#F3E5AB]" />}
+                <span>
+                  {lightMode
+                    ? lang === 'ar'
+                      ? 'الوضع الليلي الملكي'
+                      : 'Switch to Obsidian Nacre (Dark)'
+                    : lang === 'ar'
+                    ? 'الوضع النهاري اللؤلؤي'
+                    : 'Switch to Cloud Silk (Light)'}
+                </span>
+              </button>
+              <button
+                type="button"
+                onClick={() => {
+                  setMobileMenuOpen(false);
+                  setSurpriseModalOpen(true);
+                }}
+                className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full text-sm font-sans bg-[#D8B4E2] text-black font-semibold"
+              >
+                <Crown className="w-4 h-4" />
+                <span>{lang === 'ar' ? 'رسالة مفاجأة لإحسان 💌' : 'Surprise For Ihsane (@ihsane__ft)'}</span>
+              </button>
+            </div>
           </div>
         </div>
       )}
@@ -378,38 +413,49 @@ export function App() {
           HERO SECTION — FUTURISTIC NACRE & CRYSTAL HAUTE COUTURE
          ===================================================================== */}
       <main id="top" className="relative z-10">
-        <section className="pt-32 sm:pt-40 pb-20 md:pb-32 px-4 sm:px-8 max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+        <section className="pt-24 sm:pt-36 md:pt-40 pb-14 sm:pb-20 md:pb-32 px-3.5 sm:px-8 max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Left Column: Editorial Typography & Controls (7 cols) */}
-            <div className="lg:col-span-7 space-y-7">
+            <div className="lg:col-span-7 space-y-5 sm:space-y-7">
               {/* Eyebrow Tag */}
-              <div className="flex flex-wrap items-center gap-2.5">
+              <div className="flex flex-wrap items-center gap-2">
                 <span
-                  className={`inline-flex items-center gap-2 rounded-full px-3.5 py-1.5 text-[10px] uppercase tracking-[0.22em] font-medium ${
+                  className={`inline-flex items-center gap-2 rounded-full px-3 sm:px-3.5 py-1.5 text-[9px] sm:text-[10px] uppercase tracking-[0.16em] sm:tracking-[0.22em] font-medium ${
                     lightMode
                       ? 'bg-purple-950/5 text-purple-950 ring-1 ring-purple-950/15'
                       : 'bg-white/[0.05] text-[#E5D4ED] ring-1 ring-white/15'
                   }`}
                 >
-                  <Sparkles className="w-3 h-3 text-[#D8B4E2]" />
-                  <span>MAISON PEARLIE HANDCRAFTED 🔮 · MOROCCO 🇲🇦</span>
+                  <Sparkles className="w-3 h-3 text-[#D8B4E2] shrink-0" />
+                  <span>
+                    {lang === 'ar'
+                      ? 'دار بِيرْلي للصناعة اليدوية 🔮 · المغرب 🇲🇦'
+                      : 'MAISON PEARLIE HANDCRAFTED 🔮 · MOROCCO 🇲🇦'}
+                  </span>
                 </span>
 
                 <button
                   type="button"
                   onClick={() => setManifestoOpen(true)}
-                  className="press-feedback inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-[10px] uppercase tracking-[0.18em] bg-[#D8B4E2]/15 text-[#D8B4E2] ring-1 ring-[#D8B4E2]/30"
+                  className="press-feedback inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-[9px] sm:text-[10px] uppercase tracking-[0.14em] sm:tracking-[0.18em] bg-[#D8B4E2]/15 text-[#D8B4E2] ring-1 ring-[#D8B4E2]/30"
                 >
-                  <span>Read Pearlie Manifesto</span>
+                  <span>{lang === 'ar' ? 'بيان دار بِيرْلي' : 'Read Pearlie Manifesto'}</span>
                   <span>↗</span>
                 </button>
               </div>
 
-              {/* Massive Haute Couture Display Heading */}
-              <h1 className="font-display text-5xl sm:text-7xl xl:text-[5.25rem] font-light tracking-tight leading-[0.98]">
+              {/* Massive Haute Couture Display Heading (Bouazzi Maghribi when Arabic!) */}
+              <h1
+                className={
+                  lang === 'ar'
+                    ? 'font-maghribi text-4xl sm:text-6xl xl:text-[4.65rem] font-normal leading-[1.42] tracking-normal'
+                    : 'font-display text-4xl sm:text-7xl xl:text-[5.25rem] font-light tracking-tight leading-[1.02] sm:leading-[0.98]'
+                }
+              >
                 {lang === 'ar' ? (
                   <>
-                    الأناقة، التفرد <span className="italic font-normal text-nacre-gradient">وسحر اللؤلؤ</span> المصنوع بحب.
+                    أَنَاقَةُ الدُّرِّ، تَفَرُّدُ الرُّوحِ،{' '}
+                    <span className="text-[#F3E5AB]">وَإِحْسَانُ الصَّنْعَةِ</span> بِحُبٍّ.
                   </>
                 ) : lang === 'fr' ? (
                   <>
@@ -430,10 +476,37 @@ export function App() {
                 )}
               </h1>
 
+              {/* Featured Maghribi Calligraphic Poetic Couplet Banner */}
+              <div
+                dir="rtl"
+                className={`rounded-2xl p-3.5 sm:p-4 transition-all ${
+                  lightMode
+                    ? 'bg-amber-950/[0.04] ring-1 ring-amber-900/15'
+                    : 'bg-[#F3E5AB]/[0.06] ring-1 ring-[#F3E5AB]/25'
+                }`}
+              >
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                  <div className="font-maghribi text-lg sm:text-xl md:text-2xl text-[#F3E5AB] leading-[1.85] text-center sm:text-right">
+                    « نَظَمَتْ أَنَامِلُهَا الجَمَالَ لَآلِئَا ❖ فَغَدَا البَرِيقُ عَلَى الحَرِيرِ مَعَانِيَا »
+                  </div>
+                  <a
+                    href="#diwan"
+                    className="press-feedback shrink-0 self-center sm:self-auto inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-[10px] font-medium bg-[#F3E5AB]/20 text-[#F3E5AB] ring-1 ring-[#F3E5AB]/40"
+                  >
+                    <span>{lang === 'ar' ? 'اقرئي الديوان كاملاً 📜' : 'Diwan المغربي 📜'}</span>
+                  </a>
+                </div>
+                {lang !== 'ar' && (
+                  <p dir="ltr" className="text-[11px] italic opacity-70 mt-1 text-center sm:text-left font-display">
+                    “Her fingertips strung beauty into luminous pearls, turning shimmer upon silk into poetry.” — Set in Bouazzi Maghribi Calligraphy
+                  </p>
+                )}
+              </div>
+
               {/* Subtitle / Manifesto Quote */}
               <p
-                className={`text-base sm:text-lg leading-relaxed max-w-2xl ${
-                  lightMode ? 'text-stone-600' : 'text-white/70'
+                className={`text-sm sm:text-lg leading-relaxed max-w-2xl ${
+                  lightMode ? 'text-stone-600' : 'text-white/75'
                 }`}
               >
                 {lang === 'ar'
@@ -444,29 +517,49 @@ export function App() {
               </p>
 
               {/* Interactive 3D Pearl Light-Spectrum Switcher */}
-              <div className="pt-1">
-                <div className="text-[10px] font-mono-tech uppercase tracking-[0.2em] opacity-60 mb-2.5">
+              <div className="pt-0.5">
+                <div className="text-[10px] font-mono-tech uppercase tracking-[0.18em] opacity-60 mb-2">
                   {lang === 'ar'
                     ? 'إضاءة اللؤلؤ التفاعلية ثلاثية الأبعاد:'
                     : lang === 'fr'
                     ? 'Spectre Lumineux 3D Interactif :'
                     : 'Interactive 3D Pearl Refraction Spectrum:'}
                 </div>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-1.5 sm:gap-2">
                   {(
                     [
-                      { id: 'nacre', label: 'Nacre Lavender 🔮', dot: '#D8B4E2' },
-                      { id: 'ruby', label: 'Ruby Empress 🥀', dot: '#E01E37' },
-                      { id: 'noir', label: 'Noir Seraphim 🖤', dot: '#D4AF37' },
-                      { id: 'mint', label: 'Celestine Mint 🫧', dot: '#7FD1B9' },
-                      { id: 'amber', label: 'Amber Honey 🍯', dot: '#E39D52' },
+                      {
+                        id: 'nacre',
+                        label: lang === 'ar' ? 'لؤلؤ اللافندر 🔮' : 'Nacre Lavender 🔮',
+                        dot: '#D8B4E2',
+                      },
+                      {
+                        id: 'ruby',
+                        label: lang === 'ar' ? 'ياقوت الأميرة 🥀' : 'Ruby Empress 🥀',
+                        dot: '#E01E37',
+                      },
+                      {
+                        id: 'noir',
+                        label: lang === 'ar' ? 'سواد السيرافيم 🖤' : 'Noir Seraphim 🖤',
+                        dot: '#D4AF37',
+                      },
+                      {
+                        id: 'mint',
+                        label: lang === 'ar' ? 'سيليستين الزمردي 🫧' : 'Celestine Mint 🫧',
+                        dot: '#7FD1B9',
+                      },
+                      {
+                        id: 'amber',
+                        label: lang === 'ar' ? 'عسلي الكهرمان 🍯' : 'Amber Honey 🍯',
+                        dot: '#E39D52',
+                      },
                     ] as { id: PearlSpectrum; label: string; dot: string }[]
                   ).map((sp) => (
                     <button
                       key={sp.id}
                       type="button"
                       onClick={() => setSpectrum(sp.id)}
-                      className={`press-feedback px-3 py-1.5 rounded-full text-xs flex items-center gap-2 transition-all ${
+                      className={`press-feedback px-2.5 sm:px-3 py-1.5 rounded-full text-[11px] sm:text-xs flex items-center gap-1.5 sm:gap-2 transition-all ${
                         spectrum === sp.id
                           ? lightMode
                             ? 'bg-purple-950 text-white shadow-sm'
@@ -476,7 +569,7 @@ export function App() {
                           : 'bg-white/[0.04] text-white/65 hover:bg-white/[0.08] ring-1 ring-white/10'
                       }`}
                     >
-                      <span className="w-2.5 h-2.5 rounded-full" style={{ background: sp.dot }} />
+                      <span className="w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full shrink-0" style={{ background: sp.dot }} />
                       <span>{sp.label}</span>
                     </button>
                   ))}
@@ -484,10 +577,10 @@ export function App() {
               </div>
 
               {/* Primary CTAs — Button-in-Button Architecture */}
-              <div className="flex flex-wrap items-center gap-4 pt-2">
+              <div className="flex flex-col sm:flex-row sm:flex-wrap items-stretch sm:items-center gap-3 sm:gap-4 pt-1">
                 <a
                   href="#boutique"
-                  className="press-feedback group rounded-full pl-7 pr-2.5 py-2.5 bg-gradient-to-r from-[#E5D4ED] via-[#F9D5E5] to-[#D8B4E2] text-[#09060E] font-semibold text-sm flex items-center gap-4 shadow-[0_0_35px_rgba(216,180,226,0.4)]"
+                  className="press-feedback group rounded-full pl-6 pr-2 py-2 bg-gradient-to-r from-[#E5D4ED] via-[#F9D5E5] to-[#D8B4E2] text-[#09060E] font-semibold text-xs sm:text-sm flex items-center justify-between sm:justify-start gap-3 sm:gap-4 shadow-[0_0_35px_rgba(216,180,226,0.4)]"
                 >
                   <span>
                     {lang === 'ar'
@@ -496,14 +589,14 @@ export function App() {
                       ? 'Explorer la Collection'
                       : 'Explore Couture Collection'}
                   </span>
-                  <span className="w-9 h-9 rounded-full bg-black/15 flex items-center justify-center transition-transform duration-200 ease-out-strong group-hover:translate-x-1 group-hover:-translate-y-[1px]">
+                  <span className="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-black/15 flex items-center justify-center transition-transform duration-200 ease-out-strong group-hover:translate-x-1 group-hover:-translate-y-[1px] shrink-0">
                     ↗
                   </span>
                 </a>
 
                 <a
-                  href="#atelier-customizer"
-                  className={`press-feedback group rounded-full pl-6 pr-2.5 py-2.5 text-sm font-medium flex items-center gap-3 ring-1 ${
+                  href="#bespoke"
+                  className={`press-feedback group rounded-full pl-5 pr-2 py-2 text-xs sm:text-sm font-medium flex items-center justify-between sm:justify-start gap-3 ring-1 ${
                     lightMode
                       ? 'bg-white text-stone-900 ring-purple-950/15 shadow-sm'
                       : 'bg-white/[0.05] hover:bg-white/[0.1] text-white ring-white/15'
@@ -511,36 +604,42 @@ export function App() {
                 >
                   <span>
                     {lang === 'ar'
-                      ? 'صمّمي قطعتكِ الخاصة'
+                      ? 'صمّمي قطعتكِ الخاصة (A–Z)'
                       : lang === 'fr'
                       ? 'Créer Sur-Mesure (A–Z)'
                       : 'Custom Atelier Builder'}
                   </span>
-                  <span className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center transition-transform duration-200 ease-out-strong group-hover:translate-x-1 group-hover:-translate-y-[1px]">
+                  <span className="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-white/10 flex items-center justify-center transition-transform duration-200 ease-out-strong group-hover:translate-x-1 group-hover:-translate-y-[1px] shrink-0">
                     ✨
                   </span>
                 </a>
               </div>
 
               {/* Live Brand Telemetry */}
-              <div className="grid grid-cols-3 gap-4 pt-4 border-t border-white/10 max-w-xl">
+              <div className="grid grid-cols-3 gap-2 sm:gap-4 pt-4 border-t border-white/10 max-w-xl">
                 <div>
-                  <div className="font-display text-2xl sm:text-3xl font-semibold text-[#D8B4E2]">
+                  <div className="font-display text-xl sm:text-3xl font-semibold text-[#D8B4E2]">
                     100%
                   </div>
-                  <div className="text-[11px] opacity-65">Hand-Knotted Pearls & Crystals</div>
+                  <div className="text-[10px] sm:text-[11px] opacity-65">
+                    {lang === 'ar' ? 'صناعة يدوية حبةً بحبة' : 'Hand-Knotted Pearls & Crystals'}
+                  </div>
                 </div>
                 <div>
-                  <div className="font-display text-2xl sm:text-3xl font-semibold text-[#F9D5E5]">
+                  <div className="font-display text-xl sm:text-3xl font-semibold text-[#F9D5E5]">
                     26+
                   </div>
-                  <div className="text-[11px] opacity-65">Signature Creations & Reels</div>
+                  <div className="text-[10px] sm:text-[11px] opacity-65">
+                    {lang === 'ar' ? 'تصميم حصري وميدالية' : 'Signature Creations & Reels'}
+                  </div>
                 </div>
                 <div>
-                  <div className="font-display text-2xl sm:text-3xl font-semibold text-[#C9F0E4]">
+                  <div className="font-display text-xl sm:text-3xl font-semibold text-[#C9F0E4]">
                     🚚 🇲🇦
                   </div>
-                  <div className="text-[11px] opacity-65">Delivery All Over Morocco</div>
+                  <div className="text-[10px] sm:text-[11px] opacity-65">
+                    {lang === 'ar' ? 'توصيل لكل مدن المغرب' : 'Delivery All Over Morocco'}
+                  </div>
                 </div>
               </div>
             </div>
@@ -990,6 +1089,11 @@ export function App() {
         </section>
 
         {/* =====================================================================
+            DIWAN AL-DURR — ARABIC POETRY IN BOUAZZI MAGHRIBI CALLIGRAPHY
+           ===================================================================== */}
+        <MaghribiPoetryDiwan lang={lang} lightMode={lightMode} />
+
+        {/* =====================================================================
             INTERACTIVE BESPOKE STUDIO (Custom Bag & Alphabet Keychain Builder)
            ===================================================================== */}
         <BespokeStudio
@@ -1204,9 +1308,15 @@ export function App() {
                   <div className="text-[10px] font-mono-tech uppercase tracking-[0.22em] text-[#D8B4E2] mb-1">
                     THE CREATOR & FOUNDER · MAISON IHSANE
                   </div>
-                  <h3 className="font-display text-3xl font-medium mb-1">
+                  <h3 className="font-display text-2xl sm:text-3xl font-medium mb-1">
                     Ihsane Ft <span className="text-base font-normal opacity-70">(@ihsane__ft)</span>
                   </h3>
+                  <div
+                    dir="rtl"
+                    className="font-maghribi text-lg sm:text-xl text-[#F3E5AB] mb-2 leading-relaxed"
+                  >
+                    إِحْسَان فَتْحِي — «إِحْسَانُ صَنْعَتِهَا يُشِعُّ نَضَارَةً ❖ كَالبَدْرِ يَنْسِجُ فِي الظَّلَامِ دَرَارِيَا»
+                  </div>
                   <p className="text-xs sm:text-sm opacity-75 max-w-xl leading-relaxed">
                     {lang === 'ar'
                       ? 'المؤسسة والمبدعة وراء متجر Pearlie Handcrafted (@_pearlie.dreamy) ومساحة Little Calm Corner (@__little.calmcorner). طالبة هندسة في سنتها الأخيرة تجمع بين دقة التصميم وسحر الصناعة اليدوية.'
@@ -1252,6 +1362,9 @@ export function App() {
                 Pearlie Handcrafted 🔮 × Little Calm Corner ☁️
               </div>
               <div>Created with love for Ihsane (@ihsane__ft) · Delivery all over Morocco 🚚🇲🇦</div>
+              <div dir="rtl" className="font-maghribi text-base sm:text-lg text-[#F3E5AB] mt-1">
+                إِحْسَان فَتْحِي (@IhsaneFathi) ❖ أُسَامَة الحَاجِي (@Bosaj)
+              </div>
             </div>
           </div>
 

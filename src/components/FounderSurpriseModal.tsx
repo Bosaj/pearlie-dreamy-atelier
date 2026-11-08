@@ -20,8 +20,8 @@ export const FounderSurpriseModal: React.FC<FounderSurpriseModalProps> = ({ isOp
       aria-modal="true"
       aria-labelledby="ihsane-surprise-title"
     >
-      <div className="animate-modal-enter relative w-full max-w-2xl p-2 rounded-[2.25rem] bg-white/[0.06] ring-1 ring-white/20 shadow-2xl">
-        <div className="relative rounded-[calc(2.25rem-0.5rem)] bg-gradient-to-br from-[#191129] via-[#0D0915] to-[#1E122C] p-6 sm:p-10 text-white overflow-hidden shadow-[inset_0_1px_1px_rgba(255,255,255,0.22)]">
+      <div className="animate-modal-enter relative w-full max-w-2xl p-1.5 sm:p-2 rounded-[1.75rem] sm:rounded-[2.25rem] bg-white/[0.06] ring-1 ring-white/20 shadow-2xl max-h-[92dvh] overflow-y-auto">
+        <div className="relative rounded-[calc(1.75rem-0.375rem)] sm:rounded-[calc(2.25rem-0.5rem)] bg-gradient-to-br from-[#191129] via-[#0D0915] to-[#1E122C] p-5 sm:p-10 text-white overflow-hidden shadow-[inset_0_1px_1px_rgba(255,255,255,0.22)]">
           {/* Close button */}
           <button
             type="button"
@@ -88,11 +88,17 @@ export const FounderSurpriseModal: React.FC<FounderSurpriseModalProps> = ({ isOp
           </div>
 
           {/* Heartfelt Tribute Letter */}
-          <div className="rounded-2xl bg-white/[0.04] ring-1 ring-white/10 p-5 sm:p-6 space-y-3.5 text-sm leading-relaxed text-white/85 mb-6">
+          <div className="rounded-2xl bg-white/[0.04] ring-1 ring-white/10 p-4 sm:p-6 space-y-3.5 text-xs sm:text-sm leading-relaxed text-white/85 mb-6">
+            <div
+              dir="rtl"
+              className="p-3 rounded-xl bg-[#F3E5AB]/10 ring-1 ring-[#F3E5AB]/30 text-center font-maghribi text-lg sm:text-xl text-[#F3E5AB] leading-[1.85]"
+            >
+              « إِحْسَانُ صَنْعَتِهَا يُشِعُّ نَضَارَةً ❖ كَالبَدْرِ يَنْسِجُ فِي الظَّلَامِ دَرَارِيَا »
+            </div>
             {lang === 'ar' ? (
               <>
-                <p className="font-display text-xl text-[#F9D5E5]">
-                  إلى إحسان المبدعة (@ihsane__ft) 🤍🔮
+                <p className="font-maghribi text-2xl text-[#F9D5E5]">
+                  إِلَى إِحْسَان فَتْحِي المُبْدِعَةِ (@ihsane__ft) 🤍🔮
                 </p>
                 <p>
                   هذا الموقع صُمّم خصيصاً كمفاجأة لكِ احتفاءً بإبداعكِ وشغفكِ! بين سنتكِ الأخيرة في الدراسة الهندسية، وبين أناملكِ التي تنسج مئات اللآلئ والكريستالات في{' '}

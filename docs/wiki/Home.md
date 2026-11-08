@@ -4,7 +4,7 @@ Welcome to the official engineering and brand documentation for **Pearlie Handcr
 
 **Live Production (GitHub Pages):** [https://bosaj.github.io/pearlie-dreamy-atelier/](https://bosaj.github.io/pearlie-dreamy-atelier/)  
 **WhatsApp Atelier Concierge:** [https://wa.me/message/HYSIBOQVMTCAE1](https://wa.me/message/HYSIBOQVMTCAE1)  
-**Current Version:** v1.2.0 · [Releases](https://github.com/Bosaj/pearlie-dreamy-atelier/releases) · [Changelog](https://github.com/Bosaj/pearlie-dreamy-atelier/blob/main/CHANGELOG.md)
+**Current Version:** v1.3.0 · [Releases](https://github.com/Bosaj/pearlie-dreamy-atelier/releases) · [Changelog](https://github.com/Bosaj/pearlie-dreamy-atelier/blob/main/CHANGELOG.md)
 
 ---
 
@@ -33,8 +33,13 @@ Welcome to the official engineering and brand documentation for **Pearlie Handcr
    - Dedicated portal for Ihsane's sister sanctuary [`@__little.calmcorner`](https://www.instagram.com/__little.calmcorner/) (*“🤍 little reminders for your soul | 🌸 soft life & calm mind”*).
    - Includes the **Daily Soft Reminder Deck**, an interactive **4–4–6 Calm Breathing Orb**, her **3 Behind-the-Scenes Story Highlights** (*My business 💎*, *Soft Planner 🤍*, *Cozy Breaks 🎬*), and **5 Reels & Posts** including her ENIAD engineering school integration day.
 
-6. **Founder Surprise Dedication (`FounderSurpriseModal.tsx`):**
-   - Accessible from the top navbar (**“👑 For Ihsane ✨”**) and founder section, presenting a trilingual (`EN` / `FR` / `ع`) surprise dedication letter and celebratory pearl sparkles.
+6. **Diwan al-Durr — Classical Arabic Poetry & Moroccan Maghribi Calligraphy (`MaghribiPoetryDiwan.tsx`):**
+   - Dedicated Arabic poetic pavilion (`#diwan`) featuring **4 bespoke classical Arabic poems** (*Bahr al-Kamil*, *Bahr al-Basit*, *Bahr al-Wafir*, and *Al-Muwashshah al-Maghribi*) composed in honor of **Ihsane (`@ihsane__ft`)**, **Pearlie Handcrafted**, and **Little Calm Corner**.
+   - Bundled with the authentic Moroccan **`Bouazzi Maghribi`** script (`public/fonts/BouazziMaghribi-Regular.woff2`) plus **`Aref Ruqaa`** and **`Amiri`**, complete with a live 3-script switcher (`الخط المغربي` / `خط الرقعة` / `الخط الأميري`), translation toggle, and 1-click poem copy.
+
+7. **Founder Surprise Dedication (`FounderSurpriseModal.tsx`) & Universal Phone Responsiveness (`320px–430px`):**
+   - Accessible from the top navbar (**“👑 For Ihsane ✨”**) and founder section, presenting a trilingual (`EN` / `FR` / `ع`) surprise dedication letter, Maghribi calligraphic couplets, and celebratory pearl sparkles.
+   - Engineered for 100% mobile phone responsiveness (`320px` through `430px` viewports) with zero horizontal overflow in both `LTR` and `RTL`.
 
 ---
 

@@ -1,20 +1,39 @@
 @import "tailwindcss";
 
+/* Authentic Moroccan Calligraphic Font: Bouazzi Maghribi by Mohamed Gallah (MIT) */
+@font-face {
+  font-family: 'Bouazzi Maghribi';
+  src: url('./assets/fonts/BouazziMaghribi-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 @layer base {
   :root {
     --ease-out-strong: cubic-bezier(0.23, 1, 0.32, 1);
     --ease-drawer: cubic-bezier(0.32, 0.72, 0, 1);
     --ease-in-out-strong: cubic-bezier(0.77, 0, 0.175, 1);
-    --font-display: 'Cormorant Garamond', Georgia, serif;
-    --font-syne: 'Syne', sans-serif;
-    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-    --font-mono: 'JetBrains Mono', monospace;
-    --font-arabic: 'Readex Pro', sans-serif;
+    --font-display: 'Cormorant Garamond', 'Amiri', 'Bouazzi Maghribi', Georgia, serif;
+    --font-syne: 'Syne', 'Reem Kufi', sans-serif;
+    --font-sans: 'Plus Jakarta Sans', 'Readex Pro', 'Reem Kufi', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'JetBrains Mono', 'Reem Kufi', monospace;
+    --font-arabic: 'Readex Pro', 'Reem Kufi', 'Amiri', sans-serif;
+    --font-maghribi: 'Bouazzi Maghribi', 'Aref Ruqaa', 'Amiri', serif;
+    --font-ruqaa: 'Aref Ruqaa', 'Bouazzi Maghribi', 'Amiri', serif;
+    --font-amiri: 'Amiri', 'Bouazzi Maghribi', Georgia, serif;
   }
 
   html {
     font-family: var(--font-sans);
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    overflow-x: hidden;
+    max-width: 100vw;
   }
 }
 
@@ -26,7 +45,7 @@
   font-family: var(--font-syne);
 }
 
-.font-sans- luxury {
+.font-sans-luxury {
   font-family: var(--font-sans);
 }
 
@@ -36,6 +55,30 @@
 
 .font-arabic {
   font-family: var(--font-arabic);
+}
+
+.font-maghribi {
+  font-family: var(--font-maghribi);
+  font-feature-settings: "liga" 1, "calt" 1, "kern" 1;
+}
+
+.font-ruqaa {
+  font-family: var(--font-ruqaa);
+  font-feature-settings: "liga" 1, "calt" 1;
+}
+
+.font-amiri {
+  font-family: var(--font-amiri);
+  font-feature-settings: "liga" 1, "calt" 1;
+}
+
+/* Hide scrollbars on horizontal mobile chip/pill bars */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 /* Custom Easing Transitions (Emil Kowalski + High-End Visual Design) */

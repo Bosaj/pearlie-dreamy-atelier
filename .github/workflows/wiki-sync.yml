@@ -28,6 +28,7 @@ jobs:
             git clone "$WIKI_URL" wiki
             cp -r repo/docs/wiki/* wiki/
             cd wiki
+            git config lfs.locksverify false
             git config user.name "github-actions[bot]"
             git config user.email "github-actions[bot]@users.noreply.github.com"
             git add .
