@@ -1,0 +1,29 @@
+{
+  "name": "pearlie-dreamy-atelier",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Pearlie Handcrafted (@_pearlie.dreamy) & Little Calm Corner (@__little.calmcorner) — Futuristic Haute Couture Pearl & Crystal Atelier by Ihsane (@ihsane__ft).",
+  "author": "Oussama Elhadji <oussousselhadji@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "lucide-react": "^1.54.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "@vitejs/plugin-react": "^4.4.0",
+    "tailwindcss": "^4.1.0",
+    "typescript": "^5.8.2",
+    "vite": "^6.2.0"
+  }
+}
